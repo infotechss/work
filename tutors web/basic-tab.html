@@ -109,10 +109,10 @@
 
                                 <div class="field-margin">
                                     <div class="row">
-                                        <div class="col-md-1">
+                                        <div class="col-sm-1">
                                             <label class="control-label" for="inputtitle">Title</label>
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-sm-11">
                                             <input class="form-control" id="inputnet"
                                             placeholder=".Net" type="text">
                                         </div>
@@ -121,10 +121,10 @@
 
                                 <div class="field-margin">
                                     <div class="row">
-                                        <div class="col-md-1">
+                                        <div class="col-sm-1">
                                             <label class="control-label" for="inputlasttitle">Subtitle</label>
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-sm-11">
                                             <textarea id="subtitle-text" class="form-control" rows="3" placeholder="e.g. A-Z guide to creating amazing images and clips using the newest version of industry’s preferred software."></textarea>
                                         </div>
                                     </div>
@@ -132,10 +132,10 @@
                                 
                                 <div class="field-margin">
                                     <div class="row">
-                                        <div class="col-md-1">
+                                        <div class="col-sm-1">
                                             <label class="control-label" for="inputkeywords">Keywords</label>
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-sm-11">
                                             <input class="form-control" id="inputkeywords" placeholder="" type="text">
                                         </div>
                                     </div>
@@ -144,26 +144,30 @@
                                 <div class="select-options">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="inputcategory">Category</label>
-
-                                                <div class="col-sm-10">
-                                                    <select class="form-control">
-                                                        <option>Select one</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
+                                            <div class="field-margin">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-1">
+                                                        <label class="control-label" for="inputcategory">Category</label>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-11">
+                                                        <select class="form-control">
+                                                            <option>Select one</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="inputlanguage">Language</label>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-1">
+                                                    <label class="control-label" for="inputlanguage">Language</label>
+                                                </div>
 
-                                                <div class="col-sm-10">
+                                                <div class="col-md-10 col-sm-11">
                                                     <select class="form-control">
                                                         <option>Select one</option>
                                                         <option>English</option>
@@ -187,21 +191,21 @@
                             <form class="form-horizontal course-form">
                                 <div class="course-summary field-margin">
                                     <div class="row">
-                                        <div class="col-sm-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <label class="control-label" for="inputcourse-summery">Course Summery</label>
                                         </div>
-                                        <div class="col-sm-10">
+                                        <div class="col-md-10 col-sm-9">
                                             <textarea id="" class="form-control" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-3">
                                         <label class="control-label" for="inputcategory">Course Goal and
                                         Objectives</label>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-sm-9">
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <div class="inline-field">
@@ -222,12 +226,12 @@
                                 </div>
                                 <div class="ins-level">
                                     <div class="row">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <label class="control-label" for="inputcourse-summery">Instructional Level</label>
                                         </div>
-                                        <div class="col-md-10">
-                                            <div class="form-group">
-                                                <div class="col-sm-10">
+                                        <div class="col-md-10 col-sm-9">
+                                            
+                                            <div class="radio-fields">
                                                 <input id="inlineRadio1" title="inlineRadioOptions" type="radio" value="option1">
                                                 <label class="radio-inline">Introductory</label>
                                                 <input id="inlineRadio2" title="inlineRadioOptions" type="radio" value="option2">
@@ -236,8 +240,8 @@
                                                 <label class="radio-inline">Advanced</label>
                                                 <input id="inlineRadio3" title="inlineRadioOptions" type="radio" value="option3">
                                                     <label class="radio-inline">All Levels (Comprehensive)</label>
-                                                </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -298,58 +302,57 @@
 
                         <div class="form-wrap">
                             <form class="form-horizontal course-form">
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="inputcover-preview">Video Preview</label>
-
-                                    <div class="col-sm-10 dummy-course-wrap dummy-course">
-                                        <div class="video-view">
-                                            <img alt="" src="images/course-video.jpg">
+                                <div class="field-margin">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="control-label" for="inputcover-preview">Video Preview</label>
                                         </div>
+                                        <div class="col-md-10">
+                                            <div class="dummy-course-wrap dummy-course">
+                                                <div class="video-view">
+                                                    <img alt="" src="images/course-video.jpg">
+                                                </div>
 
-                                        <p>Your beautiful, clean, non-pixelated
-                                        video should be at minimum 817x451.</p>
+                                                <p>Your beautiful, clean, non-pixelated
+                                                video should be at minimum 817x451.</p>
 
-                                        <p>A Promo Video is displayed on your
-                                        course link or URL. Landing page and will
-                                        be first video seen by your potential
-                                        students. A Promo Video should be 1-2
-                                        minutes in length. Let your students know
-                                        who you are, main course goal and
-                                        objectives, instructional level and
-                                        exciting reasons to take your course. A
-                                        Promo Video is seprate from the Course
-                                        Cotent. If you don’t add a Promo Video, the
-                                        first video lecture in your course content
-                                        will play.</p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label" for="inputcover-preview">Youtube Url</label>
-
-                                        <div class="col-sm-8">
-                                            <input class="form-control" id="" placeholder="http://www.youtube.com/watch?v=hSZPDYriJ3s"
-                                            type="text">
-                                        </div>
-
-                                        <div class="col-sm-2">
-                                            <button class="btn btn-upload pull-right" type=
-                                            "submit">Parse Video</button>
+                                                <p>A Promo Video is displayed on your
+                                                course link or URL. Landing page and will
+                                                be first video seen by your potential
+                                                students. A Promo Video should be 1-2
+                                                minutes in length. Let your students know
+                                                who you are, main course goal and
+                                                objectives, instructional level and
+                                                exciting reasons to take your course. A
+                                                Promo Video is seprate from the Course
+                                                Cotent. If you don’t add a Promo Video, the
+                                                first video lecture in your course content
+                                                will play.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label" for="inputcover-preview">Vimeo url</label>
-
-                                        <div class="col-sm-8">
-                                            <input class="form-control" id="" placeholder="http://vimeo.com/71055478" type="text">
+                                <div class="video-fields">
+                                    <div class="field-margin">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="inputcover-preview">Youtube Url</label>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input class="form-control" id="" placeholder="http://www.youtube.com/watch?v=hSZPDYriJ3s" type="text">
+                                                <button class="btn btn-upload" type="submit">Parse Video</button>
+                                            </div>
                                         </div>
-
-                                        <div class="col-sm-2">
-                                            <button class="btn btn-upload pull-right" type="submit">Parse Video</button>
+                                    </div>
+                                    <div class="field-margin">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="inputcover-preview">Vimeo url</label>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input class="form-control" id="" placeholder="http://vimeo.com/71055478" type="text">
+                                                <button class="btn btn-upload" type="submit">Parse Video</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

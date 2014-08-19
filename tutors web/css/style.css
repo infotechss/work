@@ -210,7 +210,16 @@ ______________________*/
 .ins-level{
 	padding: 23px 0 0;
 }
-	
+.radio-fields label{
+	margin-top: -6px !important;
+	padding: 0 10px 0 !important;
+}
+.video-fields input{
+	max-width: 824px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 18px;
+}
 .btn-upload{
 	background:#505861;
 	color:#fff;
@@ -946,7 +955,7 @@ ______________________*/
 /*  Sidebar
 -------------------------------------- */
 #sidebar{
-	display:none;
+	display: none;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1025,7 +1034,7 @@ ______________________*/
 /*  Right Panel
 -------------------------------------- */
 .right-panel{
-	display:none;
+	display: none;
 	background: #32b1d2;
 	position: absolute;
 	right: 0;

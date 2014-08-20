@@ -35,6 +35,7 @@ h3{
 	margin: 0 0 16px;
 }
 h4{
+	font-size: 14px;
 }
 
 
@@ -55,6 +56,10 @@ p{
 	color: #3d444e;
 }
 
+p a{
+	color: #32b1d2;
+}
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -68,6 +73,55 @@ ul{
 ul li{
 	list-style: none;
 }
+body{
+	overflow-x: hidden;
+}
+.logged-in{
+	position: relative;
+}
+.logged-in .container{
+	width: auto;
+}
+.logged-in #container-fluid{
+	margin-left: 210px;
+	overflow: hidden;
+}
+.logged-in #sidebar{
+	display: block;
+	width: 210px;
+	float: left;
+}
+	.logged-in #sidebar:before{
+		background: #3d444e;
+		width: 210px;
+		content: "";
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+.logged-in .panel-inner{
+	display: block;
+}
+.logged-in .logo{
+	display: none;
+}
+.small-logo{
+	display: block;
+	background: #32b1d2;
+	padding: 20px 0;
+}
+#panel-btn{
+	display: none;
+	margin-bottom: 20px;
+	text-align: right;
+}
+	.logged-in #panel-btn{
+		display: block;
+	}
+	.panel-btn a{
+		border-radius: 2px;
+	}
 
 /* Header
 ______________________*/
@@ -148,6 +202,10 @@ ______________________*/
 		.nav-custom li a:hover{
 			background:#fff;
 		}
+		.nav-custom li a:focus{
+			background: none;
+			outline: none;
+		}
 		.nav-custom a{
 			font-family:'Roboto';
 			color:#707378;
@@ -180,7 +238,7 @@ ______________________*/
 	padding:40px 0 0;
 }
 	.course-elements h5{
-		margin-bottom:25px;
+		margin-bottom:20px;
 	}
 .course-form{
 	border-bottom:2px solid #eaebec;
@@ -236,6 +294,7 @@ ______________________*/
 }
 .form-horizontal .control-label{
 	text-align:left;
+	font-weight: normal;
 	color:#6a7179;
 }
 #subtitle-text{
@@ -262,6 +321,11 @@ ______________________*/
 	.pager .btn-next {
 		background: #32b1d2;
 	}
+.image-field{
+	width: 817px;
+	margin-right: 20px;
+	display: inline-block;
+}
 .radio-inline{
 	color:#6a7179;
 }
@@ -293,21 +357,28 @@ ______________________*/
 	padding:4px;
 	color:#000;
 	margin-right:6px;
+	vertical-align: middle;
 }
 .badge.check{
 	background:#8db85c;
 	color:#fff;
-	margin-left:10px;
+	margin: -5px 0 0 10px;
+
 }
 .add-btn{
 	margin-left:8px;
+	text-align: right;
 }
 .first-quiz{
 	border:1px solid #d4d3d3;
 	border-radius:2px;
 	background:#fff;
 	padding:20px 25px;
+	position: relative;
 }
+	.first-quiz .branch-circle i{
+		color: #e3b13d;
+	}
 .btn-comment{
 	background:#b0b6bc;
 	color:#fff;
@@ -315,6 +386,13 @@ ______________________*/
 .section1,
 .section2{
 	margin-bottom:80px;
+}
+.section2 h3,
+.section1 h3{
+	font-weight: normal;
+	color: #303842;
+	padding: 5px 0 2px;
+	font-size: 20px;
 }
 .first-quiz{
 	margin-bottom:0px;
@@ -338,40 +416,75 @@ ______________________*/
 	border:1px solid #d4d3d3;
 	border-radius:2px;
 	background:#fff;
-	padding:20px 25px;
+	padding:20px 0 0;
 	margin-bottom:30px;
+	position: relative;
 }
-.icons li i{
-	font-size:36px;
-	display:block;
+.branch-circle{
+	background: #fff;
+	border-radius: 100%;
+	position: absolute;
+	right: 100%;
+	top: 30px;
+	margin-right: 26px;
 }
-.icons span{
-	font-size:12px;
-	display:block;
+	.branch-circle i{
+		display: block;
+		color: #8db85c;
+		font-size: 20px;
+		margin: -2px 0;
+	}
+	.lecture-wrap h4{
+		padding: 0 20px;
+	}
+.icons{
+	margin-bottom: 0;
+	padding: 8px 0;
 }
+	.icons li i{
+		font-size:36px;
+		margin-bottom: 10px;
+		display:block;
+		text-align: center;
+	}
+	.icons span{
+		font-size:12px;
+		display:block;
+	}
 .content-selection{
 	margin-top:20px;
-	padding-top:20px;
 	border-top:1px solid #8db85c;
 }
-.content-selection p{
-	margin:30px 20px 0 20px;
-}
-.content-selection li a{
-	float:left;
-	padding:30px 35px;
-	color:#b7babd;
-}
-.content-selection li a:hover{
-	color:#000;
-}
-.content-selection span{
-	text-align:center;
-	display:block;
-}
-.content-selection li a:hover{
-	background:#e5f1d7;
-}
+	.content-selection p{
+		padding:30px 20px 0;
+	}
+	.content-selection li{
+		float: left;
+	}
+	.content-selection li a{
+		display: block;
+		padding:15px 35px;
+		color:#b7babd;
+		border-radius: 2px;
+	}
+	.content-selection li a:hover{
+		background:#e5f1d7;
+		color:#000;
+	}
+	.content-selection li a:hover i{
+		border-color: #000;
+	}
+	.content-selection span{
+		display:block;
+	}
+	.content-selection .play-icon{
+		padding: 6px 0 0;
+	}
+		.content-selection .play-icon i{
+			font-size: 14px;
+			border: 2px solid #b2b6b9;
+			padding: 5px 0;
+		}
 .date-section{
 	padding-bottom:20px;
 	border-bottom:1px solid #e2e4e6;
@@ -379,56 +492,178 @@ ______________________*/
 }
 .coupen{
 	background:#f8f2e3;
+	margin-bottom: 40px;
 	border:1px solid #edddce;
-	padding:25px;
+	border-radius: 2px;
+	padding:25px 15px 25px 20px;
 }
-.coupen p{
-	margin-bottom:0;
-	color:#e26e16;
-}
-.subscribe{
+	.coupen p{
+		margin-bottom:0;
+		color:#e26e16;
+		vertical-align: middle;
+		line-height: 1.5;
+	}
+	.coupen p span{
+		display: block;
+		font-size: 14px;
+	}
+.subscribe-btn{
+	text-align: right;
 	margin-top:6px;
 }
 .fa.exclaimation{
 	color:#e26e16;
-	font-size:30px;
-	margin-top:8px;
+	font-size:28px;
+	margin: 6px 16px 0 0;
+	vertical-align: middle;
+	float: left;
 }
+.coupon-code{
+	background: #fff;
+	border: 2px solid #8db85c;
+	border-radius: 2px;
+	padding-right: 30px;
+}
+.green-bg{
+	background: #8db85c;
+	width: 160px;
+	text-align: center;
+	padding: 26px 32px;
+	float: left;
+}
+	.super-text{
+		display: block;
+		font-size: 50px;
+		color: #fff;
+		font-weight: 700;
+	}
+		.super-text sup{
+			font-size: 28px;
+			vertical-align: 2px;
+		}
+	.green-bg span:last-child{
+		font-size: 14px;
+		color: #fff;
+	}
+.coupon-sec{
+	margin-left: 190px;
+}
+.coupon-info{
+	background: url(../images/coupon-code.png) no-repeat left 4px;
+	margin: 54px 0 0 0;
+	padding: 0 0 0 74px;
+}
+	.coupon-info h3{
+		margin-bottom: 5px;
+	}
+	.coupon-info h3 span{
+		font-size: 12px;
+		font-weight: 700;
+		margin-left: 10px;
+		border-left: 1px solid #a2a7ab;
+		padding: 0 10px;
+		line-height: 1.2;
+		display: inline-block;
+	}
+	.coupon-info p{
+		margin-bottom: 0;
+	}
+.coupon-apply{
+	text-align: right;
+	padding: 56px 0 0;
+}
+	.coupon-apply input{
+		margin-right: 20px;
+	}
+	.coupon-apply button{
+		background: #505861;
+		text-shadow: none;
+		font-size: 12px;
+		color: #fff;
+		padding: 8px 20px;
+	}
 .fa.calendar{
 	font-size:16px;
 	top:10px !important;
 	right:18px !important;
 }
-.free,
-.paid{
-	border-radius:0;
-	padding:6px 22px;
+.current-price{
+	margin-bottom:20px;
 }
-.free i,
-.paid i{
-	margin:0 12px;
-}
+	.current-price .btn-group{
+		border:1px solid #d1d1d1;
+		margin-right: 30px;
+		border-radius: 4px;
+	}
+	.current-price button{
+		font-size: 12px;
+		font-weight: 300;
+		border-radius:0;
+		padding:7px 22px 7px 10px;
+		text-align: center;
+	}
+	.current-price button:hover{
+		color: #000;
+	}
+	.current-price button i{
+		margin:0 12px;
+	}
+	.current-price p{
+		margin-bottom: 0;
+		padding: 28px 0 30px;
+	}
+		.current-price p i{
+			font-size: 14px;
+			color: #32b1d2;
+			margin-right: 18px;
+			border: 1px solid #32b1d2;
+			border-radius: 100px;
+			padding: 2px 4px 1px;
+		}
 .free{
 	background:#fff;
-}
-.free:hover{
-	background:#fff;
-}
-.current-price{
-	margin-bottom:30px;
 }
 .paid{
 	background:#3d444e;
 	color:#fff;
 	text-shadow:none;
 }
-.paid:hover{
-	background:#3d444e;
-	color:#fff;
+.price-field{
+	position: relative;
+	font-weight: normal;
+	margin: 0 6px 0 0;
+	vertical-align: middle;
 }
-.btn-group{
-	border:1px solid #d1d1d1;
+	.price-field input{
+		display: inline-block;
+		width: 194px;
+		margin-left: 12px;
+		padding: 6px 34px;
+	}
+.dollar-sign{
+	font-size: 17px;
+	font-weight: 900;
+	position: absolute;
+	left: 54px;
+	top: 6px;
 }
+.opt-btns{
+	display: inline-block;
+}
+	.opt-btns a{
+		color: #fff;
+		font-size: 12px;
+		font-weight: normal;
+		text-shadow: none;
+		margin-right: 6px;
+		padding: 7px 20px 8px;
+	}
+		.opt-btns a:first-child{
+			background: #505861;
+		}
+		.opt-btns a:last-child{
+			background: #b0b6bc;
+		}
 /*	dev style end	*/
 
 .main-top{
@@ -458,6 +693,7 @@ ______________________*/
 		color: #000;
 	}
 .banner-wrap img{
+	width: 100%;
 	display: block;
 }
 .company-logo{
@@ -492,9 +728,6 @@ ______________________*/
 	border-bottom: 1px solid #e1e4e9;
 	padding: 57px 0 0;
 }
-	.info-sec p a{
-		color: #32b1d2;
-	}
 .sec-title{
 	padding: 6px 0 26px;
 }
@@ -1028,20 +1261,23 @@ ______________________*/
 	background: #303842;
 }
 	.setting-link span{
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 /*  Right Panel
 -------------------------------------- */
-.right-panel{
-	display: none;
+#right-panel{
 	background: #32b1d2;
 	position: absolute;
-	right: 0;
 	top: 0;
+	bottom: 0;
+	right: -223px;
 }
 	.panel-inner{
+		display: none;
+		position: relative;
 		width: 223px;
+		z-index: 1;
 	}
 		.user-thumbnail{
 			background: url(../images/user-pic.jpg) no-repeat center center;
@@ -1249,6 +1485,24 @@ ______________________*/
     .nav-custom li{
     	margin-left: 32px;
     }
+    .inline-field input{
+    	width: 219px;
+    }
+    .image-field{
+    	width: 650px;
+    }
+    .video-fields input{
+    	width: 658px;
+    }
+    .coupon-sec{
+    	margin-left: 178px;
+    }
+    .coupon-info{
+    	padding: 0 0 0 65px;
+    }
+    .coupon-apply{
+    	text-align: left;
+    }
 }
 @media (max-width: 992px) {
     .footer-nav li{
@@ -1260,6 +1514,37 @@ ______________________*/
     .nav-custom li{
     	margin-left: 10px;
     	padding: 0 5px;
+    }
+    .image-field{
+    	width: 467px;
+    }
+    .video-fields input{
+    	width: 474px;
+    }
+    .coupon-info{
+    	margin: 22px 0;
+    }
+    .coupon-apply{
+    	margin-bottom: 20px;
+    	padding: 0 0 0 64px;
+    }
+    .side-nav .nav-links{
+    	display: none;
+    }
+    .sidebar-inner{
+    	width: 81px;
+    	text-align: center;
+    }
+    .logged-in #container-fluid{
+    	margin-left: 81px;
+    }
+    .logged-in #sidebar:before{
+    	width: 81px;
+    }
+    .setting-link a{
+    	width: 100%;
+    	float: none;
+    	padding: 20px 0;
     }
 }
 

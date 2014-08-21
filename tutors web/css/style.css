@@ -79,6 +79,9 @@ body{
 .logged-in{
 	position: relative;
 }
+.logged-in header{
+	min-height: 68px;
+}
 .logged-in .container{
 	width: auto;
 }
@@ -111,17 +114,14 @@ body{
 	background: #32b1d2;
 	padding: 20px 0;
 }
-#panel-btn{
-	display: none;
-	margin-bottom: 20px;
-	text-align: right;
+.logged-in #panel-btn{
+	display: block;
+	position: fixed;
+	top: 150px;
+	right: -10px;
+	border-radius: 2px;
+	padding: 6px 22px 6px 12px;
 }
-	.logged-in #panel-btn{
-		display: block;
-	}
-	.panel-btn a{
-		border-radius: 2px;
-	}
 
 /* Header
 ______________________*/
@@ -156,23 +156,23 @@ ______________________*/
 	box-shadow: none;
 	padding: 7px 0 0;
 }
-.nav{
+.navbar-nav{
 	float: right;
 }
-.nav > li{
+.navbar-nav > li{
 	margin-left: 36px;
 	float:left;
 }
-.nav > li:first-child{
+.navbar-nav > li:first-child{
 	margin-left: 0;
 }
-.nav > li > a{
+.navbar-nav > li > a{
 	font-weight: 300;
 	color: #4b535d !important;
 	text-transform: uppercase;
 	padding: 15px 0;
 }
-.nav > li > a:hover{
+.navbar-nav > li > a:hover{
 	color: #32B1D2 !important;
 }
 
@@ -188,7 +188,6 @@ ______________________*/
 .nav-custom{
 	background: none;
 	box-shadow: none;
-	float: none;
 }
 	.nav-custom li{
 		margin-left: 44px;
@@ -1269,7 +1268,7 @@ ______________________*/
 #right-panel{
 	background: #32b1d2;
 	position: absolute;
-	top: 0;
+	top: 68px;
 	bottom: 0;
 	right: -223px;
 }
@@ -1376,6 +1375,236 @@ ______________________*/
 			display: inline-block;
 		}
 
+/*  Student Phase 1
+-------------------------------------- */
+.review-bar{
+	text-align: right;
+}
+.round-pic p{
+	color: #92979d;
+	margin-left: 44px;
+	line-height: 1.2;
+	padding: 2px 0 0;
+}
+.round-pic img{
+	display: block;
+	float: left;
+}
+.round-pic span{
+	display: block;
+	color: #6a7179;
+}
+.share-icons{
+	display: inline-block;
+	vertical-align: middle;
+}
+	.share-icons span{
+		display: inline-block;
+		font-size: 14px;
+		color: #a3a7ac;
+		margin-right: 20px;
+	}
+.write-review{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #e3e5e7;
+	border-radius: 2px;
+}
+	.write-review a{
+		font-size: 12px;
+	}
+	.write-review a:hover{
+		color: #32b1d2;
+	}
+	.write-review i{
+		color: #32b1d2;
+		margin-right: 8px;
+	}
+.left-sec section{
+	margin: 0 0 14px;
+}
+.left-sec section:last-child .lec-info:last-child{
+	padding-bottom: 0;
+}
+.lec-info{
+	margin-left: 8px;
+	border-left: 1px solid #d7d8d9;
+	padding: 0 0 20px 32px;
+}
+.lec-block{
+	background: #fff;
+	position: relative;
+	border: 1px solid #d4d3d3;
+	border-radius: 2px;
+}
+	.lec-block .branch-circle.filled{
+		background: #32b1d2;
+	}
+		.lec-block .branch-circle i{
+			color: #d7d8d9;
+			font-size: 18px;
+			margin: -2px -1px;
+		}
+	.lec-block p{
+		color: #6a7179;
+		margin-bottom: 6px;
+	}
+		.lec-icons a{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.lec-icons i{
+			color: #adb0b5;
+			font-size: 14px;
+		}
+		.lec-icons a:hover i{
+			color: #32b1d2;
+		}
+		.lec-title{
+			width: 424px;
+			padding: 19px 19px 12px;
+			float: left;
+		}
+		.lec-duration{
+			background: #eaebef;
+			width: 87px;
+			text-align: right;
+			padding: 13px;
+			float: right;
+		}
+			.lec-duration span{
+				font-size: 25px;
+				font-weight: 300;
+				line-height: 0.8;
+				display: block;
+			}
+.tab-content{
+	margin-bottom: 36px;
+	border: 1px solid #d6d5d5
+}
+.tab-content .btn{
+	font-size: 12px;
+}
+.user-tabs ul{
+	margin: 0 0 30px;
+	border-color: #e1e4e9;
+}
+	.user-tabs ul li{
+		margin: 0;
+	}
+	.user-tabs ul a:focus{
+		background: none !important;
+		outline: none;
+		border: none;
+	}
+	.user-tabs ul .active a:focus{
+		border: none;
+		border-bottom: 2px solid #32b1d2;
+	}
+	.user-tabs ul a:hover{
+		background: none;
+		border: none;
+		color: #1d2228 !important;
+	}
+	.user-tabs ul .active a,
+	.user-tabs ul .active a:hover{
+		background: none;
+		border: none;
+		border-bottom: 2px solid #32b1d2;
+		color: #1d2228 !important;
+	}
+	.user-tabs ul .active .fa-caret-down{
+		display: block;
+		color: #32b1d2;
+	}
+	.user-tabs ul a{
+		position: relative;
+		text-transform: none;
+		margin: 0 0 -1px;
+		border: none;
+		border-bottom: 2px solid transparent;
+		padding: 20px 24px 20px 22px;
+		color: #b0b6bc !important;
+	}
+	.user-tabs ul .fa{
+		margin-right: 15px;
+	}
+	.user-tabs ul .fa-caret-down{
+		display: none;
+		font-size: 21px;
+		position: absolute;
+		top: 100%;
+		margin-top: -4px;
+		left: 50%;
+		margin-left: -6px;
+	}
+.tab-pane{
+	background: #fff;
+}
+	.pane-inner{
+		margin-left:46px; 
+		border-left: 1px solid #d9dadb;
+		padding: 30px 30px 30px 28px;
+	}
+		.post-cmt{
+			position: relative;
+		}
+			.post-cmt img{
+				width: 100%;
+				display: block;
+				margin-bottom: 10px;
+			}
+			.user-pic{
+				position: absolute;
+				right: 100%;
+				margin-right: 12px;
+			}
+		.tab-pane ul{
+			margin-bottom: 0;
+			padding: 0 0 0 46px;
+		}
+		.tab-pane > ul{
+			padding: 0 30px 0 46px;
+		}
+			.tab-pane > ul > li{
+				position: relative;
+				border-left: 1px solid #d9dadb;
+				padding: 28px 0 30px 28px;
+			}
+			.tab-pane > ul > li > .user-pic{
+				margin-right: -16px;
+			}
+		.person-name{
+			font-size: 15px;
+		}
+		.cmt-info{
+			color: #92979d;
+			margin-bottom: 18px;
+		}
+		.user-cmt{
+			margin-bottom: 20px;
+		}
+			.user-cmt p a{
+				color: #303842 !important;
+				margin-right: 18px;
+				padding: 0;
+			}
+			.user-cmt p a:hover{
+				color: #32b1d2 !important;
+			}
+			.reply-btn i.fa{
+				margin: 0 0 0 8px;
+			}
+				.cmt-timing{
+					background: url(../images/clock-icon.png) no-repeat left center;
+					padding-left: 24px;
+				}
+.loading-more{
+	margin-bottom: 34px;
+	text-align: center;
+}
+
+
 /*  Footer 
 -------------------------------------- */
 #footer-wrap{
@@ -1386,9 +1615,6 @@ ______________________*/
 	border-bottom: 1px solid #e4e4e4;
 	padding-bottom: 30px;
 }
-	#footer-left{
-
-	}
 	.device-img{
 		margin: 0 0 20px;
 	}
@@ -1398,9 +1624,6 @@ ______________________*/
 	.google-imgs a{
 		display: inline-block;
 		margin-right: 8px;
-	}
-	#footer-center{
-
 	}
 	#footer-center h3{
 		margin: 0 0 25px;
@@ -1414,9 +1637,6 @@ ______________________*/
 	.nav-left,
 	.nav-right{
 		float: left;
-	}
-	#footer-right{
-
 	}
 	#footer-right p{
 		background: url(../images/map-img.png) no-repeat top left;
@@ -1477,6 +1697,10 @@ ______________________*/
 .btn-success{
 	background: #8db85c;
 }
+.btn-mute{
+	background: #c0c0c0;
+	color: #fff;
+}
 
 @media (max-width: 1200px){
 	.receive-field .form-control{
@@ -1502,6 +1726,12 @@ ______________________*/
     }
     .coupon-apply{
     	text-align: left;
+    }
+    .user-tabs ul a{
+    	padding: 20px 17px 20px 15px;
+    }
+    .user-tabs ul .fa-caret-down{
+    	margin-top: -5px;
     }
 }
 @media (max-width: 992px) {
@@ -1546,8 +1776,41 @@ ______________________*/
     	float: none;
     	padding: 20px 0;
     }
+    .review-bar{
+    	text-align: left;
+    }
+    .user-tabs ul a{
+    	font-size: 11px;
+    	padding: 15px 5px 15px 7px;
+    }
+    .user-tabs > ul .fa{
+    	margin-right: 13px;
+    }
+    .lec-title{
+    	width: 215px;
+    	padding: 5px 10px;
+    }
 }
-
+@media (max-width: 767px) {
+	.navbar{
+		padding-top: 3px;
+	}
+	.navbar-nav{
+		margin: 7.5px 0;
+		float: none;
+	}
+	.navbar-nav > li{
+		margin-left: 30px;
+	}
+	.nav-btn a{
+		border: 1px solid #d1d1d1;
+		padding: 12px 10px !important;
+		font-size: 20px;
+	}
+		.nav-btn i{
+			color: #32b1d2;
+		}
+}
 @media (max-width: 480px) {
     
 }

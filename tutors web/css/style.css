@@ -29,7 +29,7 @@ h2{
 	font-weight: 300;
 }
 h3{
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: 300;
 	color: #4b535d;
 	margin: 0 0 16px;
@@ -145,6 +145,9 @@ ______________________*/
 	background: #32b1d2;
 	padding: 20px 0;
 }
+#panel-btn{
+	display: none;
+}
 .logged-in #panel-btn{
 	display: block;
 	position: fixed;
@@ -219,8 +222,7 @@ ______________________*/
 	box-shadow: none;
 }
 	.nav-custom li{
-		margin-left: 44px;
-		padding: 0 15px;
+		margin-right: 46px;
 		float:left;
 	}
 		.nav-custom li a{
@@ -265,6 +267,14 @@ ______________________*/
 .course-elements{
 	padding:40px 0 0;
 }
+	.course-elements .progress-info{
+		margin: 0;
+		padding: 13px 66px 4px 22px;
+	}
+	.course-elements .progress-info p{
+		color: #a4a4a4;
+		margin-bottom: 11px;
+	}
 	.course-elements h5{
 		margin-bottom:20px;
 	}
@@ -419,7 +429,6 @@ ______________________*/
 	font-weight: normal;
 	color: #303842;
 	padding: 5px 0 2px;
-	font-size: 20px;
 }
 .first-quiz{
 	margin-bottom:0px;
@@ -1126,7 +1135,6 @@ ______________________*/
 		display: block;
 	}
 	.plan h3{
-		font-size: 20px;
 		font-weight: 400;
 		color: #6a7179;
 		margin-bottom: 20px;
@@ -1209,7 +1217,6 @@ ______________________*/
 }
 	.amount h3{
 		color: #32b1d2;
-		font-size: 20px;
 	}
 
 /*  Sidebar
@@ -1316,7 +1323,7 @@ ______________________*/
 				margin-bottom: 3px;
 			}
 			.user-thumbnail .progress,
-			.lec-progress .progress{
+			.progress-lec .progress{
 				background: #1d2228;
 				width: 104px;
 				display: inline-block;
@@ -1362,7 +1369,6 @@ ______________________*/
 			padding: 28px 30px 0;
 		}
 			.notifications h3{
-				font-size: 20px;
 				padding: 0 8px;
 				position: relative;
 				z-index: 1;
@@ -1479,10 +1485,10 @@ ______________________*/
 	.lec-block:hover .start-lec{
 		display: block;
 	}
-	.lec-block .branch-circle.filled{
+	.branch-circle.filled{
 		background: #32b1d2;
 	}
-		.lec-block .branch-circle i{
+	.lec-info .branch-circle i{
 			color: #d7d8d9;
 			font-size: 18px;
 			margin: -2px -1px;
@@ -1507,6 +1513,16 @@ ______________________*/
 			padding: 19px 19px 12px;
 			float: left;
 		}
+		.lec-title span{
+			width: 160px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.lec-title i{
+			font-size: 26px;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
 		.lec-duration{
 			background: #eaebef;
 			width: 87px;
@@ -1520,7 +1536,7 @@ ______________________*/
 				line-height: 0.8;
 				display: block;
 			}
-.tab-content{
+.user-tabs .tab-content{
 	margin-bottom: 36px;
 	border: 1px solid #d6d5d5
 }
@@ -1577,7 +1593,7 @@ ______________________*/
 		left: 50%;
 		margin-left: -6px;
 	}
-.tab-pane{
+.user-tabs .tab-pane{
 	background: #fff;
 }
 	.pane-inner{
@@ -1666,9 +1682,38 @@ ______________________*/
 		float: left;
 	}
 	.progress-info{
+		position: relative;
 		margin-left: 162px;
 		padding: 32px 20px 20px 0;
 	}
+		.progress-alert{
+			background: #fa9040;
+			position: absolute;
+			right: -1px;
+			top: -1px;
+			bottom: -1px;
+			-webkit-border-radius: 0 3px 3px 0;
+			-moz-border-radius: 0 3px 3px 0;
+			-ms-border-radius: 0 3px 3px 0;
+			-o-border-radius: 0 3px 3px 0;
+			border-radius: 0 3px 3px 0;
+		}
+			.progress-alert a{
+				background: #e26e16;
+				margin: 20px;
+			}
+			.progress-alert i{
+				font-size: 14px;
+				color: #fff;
+				padding: 1px 4px;
+			}
+		.progress-info .clearfix{
+			overflow: hidden;
+		}
+		.progress-info span{
+			display: block;
+			margin-bottom: 3px;
+		}
 		.progress-info p{
 			line-height: 1.5;
 			margin-bottom: 0;
@@ -1678,14 +1723,14 @@ ______________________*/
 		}
 		.progress-info h3{
 			color: #7e848b;
-			font-size: 20px;
 			margin-bottom: 2px;
 		}
-		.lec-progress .progress{
+		.progress-info .progress{
 			background: none;
 			box-shadow: 0 0 2px #d4d4d4 inset;
 			width: 98%;
 			display: block;
+			height: 6px;
 			margin: 0 0 14px;
 		}
 		.lec-progress .progress-bar{
@@ -1769,7 +1814,6 @@ ______________________*/
 	padding: 0 92px 53px;
 }
 	.progress-circles h3{
-		font-size: 20px;
 		margin: 0 0 6px;
 		text-transform: uppercase;
 	}
@@ -1780,9 +1824,7 @@ ______________________*/
 	border-right: 1px solid #e2e4e6;
 	border-left: 1px solid #e2e4e6;
 }
-.circle-1,
-.circle-2,
-.circle-3{
+.progress-circles [class*="circle-"]{
 	width: 132px;
 	height: 132px;
 	margin: 0 auto 25px;
@@ -1834,9 +1876,53 @@ ______________________*/
 	-o-border-radius: 3px;
 	border-radius: 3px;
 }
+	.course:hover .course-hov{
+		display: block;
+		left: 0;
+		right: 0;
+		top: 100%;
+		margin-top: -36px;
+	}
+	.course .hov-outer{
+		padding: 20px 15px 0;
+	}
+	.course .hov-inner{
+		width: auto;
+		padding: 20px;
+	}
+		.course .hov-inner > i{
+			margin-right: 0;
+			right: inherit;
+			left: 20%;
+			bottom: 100%;
+			margin-bottom: -12px;
+		}
+	.course .hov-top{
+		border: none;
+		padding: 0;
+	}
+	.course .hov-bot{
+		padding: 38px 20px 0;
+	}
+	.course .white-btns a{
+		width: auto;
+		padding: 8px 20px;
+	}
+		.course .white-btns a:last-child{
+			float: right;
+		}
+	.course .start-date{
+		border: none;
+		border-bottom: 1px solid #535a63;
+		padding: 0 0 20px;
+	}
+
 .course-content{
 	margin-left: 160px;
 }
+	.course-content .progress-info{
+		margin: 0;
+	}
 .course-cover{
 	float: left;
 }
@@ -1851,6 +1937,11 @@ ______________________*/
 	padding: 18px 20px;
 	overflow: hidden;
 }
+	.course-title span{
+		display: block;
+		font-size: 12px;
+		font-weight: normal;
+	}
 	.course-title img{
 		display: inline-block;
 	}
@@ -1886,6 +1977,165 @@ ______________________*/
 		color: #32b1d2;
 		text-decoration: underline;
 	}
+
+/*  My Batches
+-------------------------------------- */
+.tabs-wrap{
+	background: #fff;
+	border-top: 1px solid #e2e4e6;
+	border-bottom: 1px solid #e2e4e6;
+}
+.batches-content .progress-info{
+	margin: 0;
+	padding: 0 20px;
+}
+.batches-content .progress{
+	width: auto;
+}
+.batches-content .course-title{
+	margin: 0;
+	border: none;
+	padding: 18px 20px 0;
+}
+.batches-content .course-cover img{
+	height: 156px;
+}
+.course-link{
+	padding: 0 20px 17px;
+	overflow: hidden;
+}
+	.course-link span{
+		padding: 8px 0 0;
+	}
+	.course-link a{
+		padding: 8px 12px;
+	}
+.discover-courses{
+	text-align: right;
+	padding: 26px 0 0;
+}
+	.discover-courses a{
+		padding: 8px 12px;
+	}
+	.discover-courses i{
+		font-size: 20px;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+/*  My Course
+-------------------------------------- */
+.sec-head{
+	font-weight: normal;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 17px;
+}
+.category h3,
+.course-glance h3,
+.taught-by h3{
+	font-weight: normal;
+}
+.category li{
+	margin-bottom: 10px;
+}
+	.category a{
+		color: #adb2b6;
+	}
+		.category a:hover,
+		.category a:hover i{
+			color: #000;
+		}
+		.category i{
+			font-size: 18px;
+			color: #adb2b6;
+			margin-right: 20px;
+			vertical-align: middle;
+		}
+.course-glance span{
+	display: block;
+	margin-bottom: 12px;
+}
+	.course-glance i{
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+.teacher-info h3{
+	background: url(../images/tutor.png) no-repeat left center;
+	padding-left: 48px;
+	font-weight: 300;
+}
+	.teacher-info h3 span{
+		display: block;
+		font-size: 12px;
+	}
+.syllabus,
+.reviews{
+	padding: 60px 0 0;
+}
+	.syllabus h3{
+		margin-bottom: 0
+	}
+	.syllabus .lec-info{
+		position: relative;
+	}
+	.syllabus .branch-circle{
+		background: #f6f6f6;
+		margin-right: -6px;
+		top: 4px;
+	}
+		.first-sec{
+			padding: 16px 0 0 32px;
+		}
+			.first-sec .branch-circle{
+				top: 20px;
+			}
+		.last-sec{
+			padding: 0 0 0 32px;
+		}
+		.last-sec .lec-block{
+			margin-bottom: 0 !important;
+		}
+	.syllabus .lec-block{
+		position: inherit;
+		margin-bottom: 27px;
+	}
+	.syllabus .branch-circle i{
+		color: #32b1d2;
+	}
+	.syllabus .lec-title{
+		padding: 22px 19px;
+	}
+.course-rating{
+	background: #fff;
+	margin-bottom: 32px;
+	border: 1px solid #d4d3d3;
+	padding: 32px 0;
+}
+	.avg-rating{
+		background: url(../images/border-bg.png) repeat-x center center 530px auto;
+	}
+
+.tutor-reviews{
+	margin-left: 55px;
+	padding-bottom: 16px;
+}
+	.tutor-reviews h3{
+		color: #92979d;
+		font-weight: normal;
+		margin-bottom: 6px;
+	}
+	.tutor-reviews p{
+		color: #6a7179;
+	}
+	.rating{
+		margin-bottom: 14px;
+		color: #92979d;
+	}
+		.rating img{
+			display: inline-block;
+			margin-right: 12px;
+		}
+	
 
 /*  Footer 
 -------------------------------------- */

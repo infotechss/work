@@ -1,20 +1,24 @@
 
-$(document).ready(function(){
-	$("#panel-btn").click(function(){
-		$("#right-panel").animate({ right:'0' }, 500);
+jQuery.noConflict(); 
+var j$ = jQuery;
+
+j$(document).ready(function(){
+	j$("#panel-btn").click(function(){
+		j$("#right-panel").animate({ right:'0' }, 500);
 	return false;
 	})
-	$(".close-btn").click(function(){
-		$("#right-panel").animate({ right:'-223px' }, 500);
+	j$(".close-btn").click(function(){
+		j$("#right-panel").animate({ right:'-223px' }, 500);
 	return false;
 	})
 
-	//$("div").removeClass("logged-in");
+	// j$(".logged-in").removeClass("logged-in");
 	
-	var $scrollbar = $("#scrollbar1");
-	$scrollbar.tinyscrollbar();
-	$(".sb-collapse").click(function(){
-		$(".study-right").hide();
+	var j$scrollbar = j$("#scrollbar1");
+	j$scrollbar.tinyscrollbar();
+	j$(".sb-collapse").click(function(){
+		j$(".study-right").hide();
 		return false;
 	})
+
 })

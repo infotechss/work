@@ -1108,12 +1108,18 @@ ______________________*/
 .icon-field{
 	position: relative;
 }
+	.icon-field.email{
+		display: block;
+	}
 	.icon-field i{
 		position: absolute;
 		right: 15px;
 		top: 0px;
 		font-size: 14px;
 		color: #9ca1a6;
+	}
+	.icon-field.email i{
+		top: 11px;
 	}
 	.icon-field input{
 		padding-right: 35px;
@@ -1140,7 +1146,11 @@ ______________________*/
 	text-align: center;
 	border: 1px solid #d1d1d1;
 	padding-bottom: 38px;
-	border-radius: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 }
 	.plan h2{
 		background: #9ba7af;
@@ -1185,8 +1195,10 @@ ______________________*/
 		margin-bottom: 20px;
 	}
 	.plan p{
+		width: 180px;
+		text-align: left;
 		color: #6a7179;
-		margin-bottom: 15px;
+		margin: 0 auto 15px;
 	}
 	.select-plan{
 		color: #fff;
@@ -1195,10 +1207,25 @@ ______________________*/
 		.plan p i{
 			margin-right: 8px;
 		}
+		.plan-1 p i{
+			color: #9ba7af;
+		}
+		.plan-2 p i{
+			color: #cba240;
+		}
+		.plan-3 p i{
+			color: #b3adaf;
+		}
 	.plan-price{
 		font-size: 40px;
 		color: #9ba7af;
 		font-weight: bold;
+	}
+	.plan-2 .plan-price{
+		color: #cba240;
+	}
+	.plan-3 .plan-price{
+		color: #b3adaf;
 	}
 		.plan-price sup{
 			font-size: 20px;
@@ -3049,6 +3076,9 @@ ______________________*/
 .tutor-reg #contents.gray-border{
 	padding: 0;
 }
+.tutor-reg .pager{
+	margin-top: 0;
+}
 /*	Step1	*/
 .tutor-steps{
 	margin-bottom: 31px;
@@ -3145,11 +3175,6 @@ ______________________*/
 		display: block;
 		width: 86px;
 		height: 86px;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		-ms-border-radius: 100%;
-		-o-border-radius: 100%;
-		border-radius: 100%;
 		float: left;
 	}
 	.upload-photo .upload-field{
@@ -3175,55 +3200,271 @@ ______________________*/
 	color: #6a7179;
 	margin-bottom: 14px;
 }
-.personal-data label{
-	font-weight: 400;
-	margin-bottom: 0;
+.personal-data{
+	margin-bottom: 36px;
 }
-.teaching-exp{
-	margin-bottom: 25px;
-}
-	.teaching-exp .btn{
-		border: 1px solid #d1d1d1;
-	    color: #9ca4ac;
-	    text-align: right;
+	.personal-data label{
+		font-weight: 400;
+		margin-bottom: 0;
 	}
-		
-		.teaching-exp .select-exp{
-			margin-right: 24px;
+	.teaching-exp{
+		margin-bottom: 25px;
+	}
+		.teaching-exp .btn{
+			border: 1px solid #d1d1d1;
+		    color: #9ca4ac;
+		    text-align: right;
 		}
-			.teaching-exp .select-exp span{
-				margin-right: 48px;
+			
+			.teaching-exp .select-exp{
+				margin-right: 24px;
 			}
-		.teaching-exp .select-class{
-			margin-left: 20px !important;
+				.teaching-exp .select-exp span{
+					margin-right: 48px;
+				}
+			.teaching-exp .select-class{
+				margin-left: 20px !important;
+			}
+				.teaching-exp .select-class span{
+					margin-right: 34px;
+				}
+		.teaching-exp label{
+			vertical-align: middle;
 		}
-			.teaching-exp .select-class span{
-				margin-right: 34px;
-			}
-	.teaching-exp label{
-		vertical-align: middle;
+	.tutoring-exp label{
+		padding-top: 10px;
 	}
-.tutoring-exp label{
-	padding-top: 10px;
-}
-.tutoring-exp textarea{
-	height: 150px;
-	resize: none;
-}
-.offer-demo{
-	margin-bottom: 33px;
-}
-	.offer-demo label{
-		vertical-align: middle;
+	.tutoring-exp textarea{
+		height: 150px;
+		resize: none;
 	}
-	.offer-demo input{
-		margin: 0 15px 0 24px;
+	.offer-demo{
+		margin-bottom: 33px;
 	}
-.teaching-time .form-group{
-	margin-bottom: 27px;
+		.offer-demo label{
+			vertical-align: middle;
+		}
+		.offer-demo input{
+			margin: 0 15px 0 24px;
+			vertical-align: middle;
+		}
+	.teaching-time .form-group{
+		margin-bottom: 27px;
+	}
+		.teaching-time label{
+			padding-top: 10px;
+		}
+.add-info{
+	margin-bottom: 54px;
 }
-.teaching-time label{
-	padding-top: 10px;
+	.add-info label{
+		font-weight: 400;
+		color: #6a7179;
+		margin-right: 15px;
+	}
+	.add-info .alert button{
+		margin: 0;
+	}
+		.add-info .alert .fa{
+			margin-right: 16px;
+			vertical-align: middle;
+		}
+	.add-info h2{
+		color: #6a7179;
+		margin: 0 0 12px;
+		float: left;
+	}
+	.add-info h3{
+		color: #32b1d2;
+		margin-bottom: 10px;
+	}
+	.add-info p{
+		margin-bottom: 13px;
+	}
+.share-info{
+	position: relative;
+	margin-bottom: 20px;
+	border: 1px solid #d3d6d9;
+	padding: 20px;
+}
+	.sec-icon{
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		margin-top: -42px;
+
+	}
+	.sec-icon span{
+		display: block;
+		width: 84px;
+		height: 84px;
+		background: #6acae3;
+		color: #fff;
+		font-size: 30px;
+		text-align: center;
+	}
+		.sec-icon i{
+			line-height: 84px;
+		}
+.sec-info{
+	margin-left: 120px;
+	overflow: hidden;
+}
+	.sec-info p:last-child{
+		margin-bottom: 0;
+	}
+	.inline-btns{
+		float: right;
+	}
+		.inline-btns a{
+			margin-left: 7px;
+			padding: 8px 12px;
+		}
+		.inline-btns i{
+			font-size: 14px;
+			vertical-align: middle;
+			margin-right: 8px;
+		}
+	.txt-border{
+		vertical-align: 2px;
+	}
+		.txt-border label{
+			margin-left: 18px;
+		}
+		.txt-border label:first-child{
+			margin-left: 0;
+		}
+		.txt-border span{
+			font-size: 11px;
+			color: #92979d;
+			margin-left: 14px;
+		}
+		.txt-border a{
+			display: inline-block;
+			font-size: 12px;
+			color: #92979d;
+			margin-left: 16px;
+		}
+		.txt-border a:hover{
+			color: #32b1d2;
+		}
+		.txt-border a i{
+			margin-right: 8px;
+		}
+.work-exp{
+	padding: 24px 20px;
+}
+/*	Step4	*/
+.fourth-step{
+	margin-bottom: 60px;
+}
+	.fourth-step .plan-1 a{
+		margin-top: 63px;
+	}
+	.fourth-step .plan-2 a{
+		margin-top: 62px;
+	}
+/*	Step5	*/
+.fifth-step{
+	margin-bottom: 60px;
+	border: 1px solid #d1d1d1;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+.fifth-step .edit-profile{
+	background: #65c6df;
+	text-align: left;
+	padding: 16px;
+}
+.tutor-name h2{
+	color: #fff;
+	margin: 0;
+}
+.tutor-name img{
+	display: inline-block;
+	width: 86px;
+	height: 86px;
+	margin-right: 20px;
+}
+.edit-btn{
+	text-align: right;
+	padding-top: 26px;
+}
+	.edit-btn i{
+		color: #65c6df;
+		margin-right: 10px;
+	}
+.about-tutor{
+}
+	.about-tutor h3{
+		background: #efeff0;
+		padding: 15px 26px;
+	}
+	.about-tutor label{
+		color: #3d444e;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	.about-tutor p{
+		color: #6a7179;
+	}
+	.about-tutor h3 span{
+		display: inline-block;
+		color: #65c6df;
+		margin-right: 22px;
+		border: 2px solid #65c6df;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+		border-radius: 100%;
+		padding: 20px 22px 18px;
+	}
+	.about-tutor .col-md-4{
+		border-right: 1px solid #e2e4e6;
+	}
+	.about-tutor .col-md-4:first-child{
+		padding-left: 15px;
+	}
+	.about-tutor .col-md-4:last-child{
+		border-right: none;
+		padding-right: 15px;
+	}
+	.about-tutor .info-sec{
+		min-height: 180px;
+		border: none;
+		padding: 0 28px;
+	}
+	.subscription-info label{
+		padding-top: 22px;
+		float: left;
+	}
+	.gold-price{
+		float: right;
+	}
+		.gold-price .plan-price{
+			color: #cba240;
+		}
+		.gold-price .per-year{
+			padding-left: 2px;
+		}
+
+/*  Tutor Profile Setting
+-------------------------------------- */
+#contact-info .checkboxes input{
+	float: left;
+	margin-right: 20px;
+}
+#contact-info .checkboxes span{
+	display: block;
+	margin-left: 33px;
+	padding: 4px 0 0;
+}
+#contact-info .checkboxes .text-muted{
+	line-height: 1.5;
 }
 
 /*  Footer 

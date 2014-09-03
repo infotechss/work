@@ -7,10 +7,34 @@ j$(document).ready(function(){
 		j$("#right-panel").animate({ right:'0' }, 500);
 	return false;
 	})
+
 	j$(".close-btn").click(function(){
 		j$("#right-panel").animate({ right:'-223px' }, 500);
 	return false;
 	})
+
+	/*	FAQ popup	*/
+	j$(".faq-popup a").click(function(){
+		if ( j$(this).parent().hasClass('active') ) {
+			j$(".faq-popup li").removeClass("active");
+			j$(".faq-info").slideUp();
+			j$(this).children(".right-icon").removeClass("fa-chevron-circle-down")
+			j$(this).children(".right-icon").addClass("fa-chevron-circle-right")
+
+		}
+		else{
+			j$(".faq-popup li").removeClass("active");
+			j$(".faq-info").slideUp();
+			j$(this).parent().addClass("active");
+			j$(this).next('.faq-info').slideDown();
+			j$(this).parent().addClass("active");
+			j$(this).children(".right-icon").removeClass("fa-chevron-circle-down")
+			j$(this).children(".right-icon").addClass("fa-chevron-circle-down")
+		}
+				
+		return false;
+	})
+
 
 	// j$(".logged-in").removeClass("logged-in");
 	
@@ -20,5 +44,6 @@ j$(document).ready(function(){
 		j$(".study-right").hide();
 		return false;
 	})
+
 
 })

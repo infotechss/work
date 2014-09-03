@@ -2427,7 +2427,8 @@ ______________________*/
 		font-weight:300;
 		padding:50px 0 10px 50px;
 	}
-.popup-rating-main{
+.popup-rating-main,
+.faq-popup{
 	padding:50px;
 	padding-top:25px;
 }
@@ -3454,18 +3455,227 @@ ______________________*/
 
 /*  Tutor Profile Setting
 -------------------------------------- */
-#contact-info .checkboxes input{
+.field-info{
+	padding: 7px 0 0;
+}
+	.field-info .field-margin{
+		margin-bottom: 35px;
+	}
+	.form-horizontal{
+		padding-bottom: 25px;
+	}
+	.field-info input{
+		float: left;
+		margin-right: 20px;
+	}
+	.field-info span{
+		display: block;
+		margin-left: 33px;
+		padding: 4px 0 0;
+	}
+	.field-info .text-muted{
+		color: #a3a8b3;
+		line-height: 1.8;
+	}
+.learn-more{
+	color: #34b0d2;
+}
+.field-info .bulb-icon{
 	float: left;
-	margin-right: 20px;
 }
-#contact-info .checkboxes span{
+.field-info p{
+	margin: 0 0 6px 36px;
+}
+.field-info p span{
+	margin-left: 0;
+	padding: 0;
+}
+.bulb-icon{
+	border: 1px solid #32b1d2;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    color: #32b1d2;
+    font-size: 14px;
+    margin-right: 18px;
+    padding: 2px 4px 1px;
+}
+
+/*  FAQ Popup
+-------------------------------------- */
+/*.modal{
+	overflow: visible !important;
+	position: inherit !important;
+}
+.popup-ratings{
+	display: block !important;
+}
+.fade.popup-ratings{
+	opacity: 1 !important;
+}*/
+.faq-popup li {
+	margin-top: 1px;
+	border-bottom: 1px solid #e2e4e6;
+	padding: 15px 0;
+}
+.faq-popup a{
 	display: block;
-	margin-left: 33px;
-	padding: 4px 0 0;
+	color: #6a7179;
+	font-size: 15px;
+	padding: 10px 0; 
 }
-#contact-info .checkboxes .text-muted{
-	line-height: 1.5;
+.faq-popup a:focus{
+	outline: none;
+	text-decoration: none;
 }
+.faq-popup li.active{
+	color: #3d444e;
+	background: #f6f6f6;
+}
+.faq-popup li.active .left-icon{
+	color: #f17d27;
+}
+.faq-popup li.active .right-icon{
+	color: #7e858e;
+}
+.faq-popup li .fa{
+	margin:0 20px;
+	color: #b8babd;
+}
+.faq-popup li p{
+	margin-left: 50px;
+	padding-right: 45px;
+}
+.faq-info{
+	display: none;
+}
+
+.faq-popup .no-border{
+	border-bottom: none;
+}
+.right-icon{
+	float: right;
+}
+
+
+
+/*  Waqas styling 
+-------------------------------------- */
+.expert-in{
+}
+.sidebar-links h2{
+	background: #dfe5e6;
+	padding:10px 0 0;
+	margin-top: 0;
+}
+.top-info {
+	margin-bottom:37px;
+}
+.sidebar-links h2 span{
+	display: inline-block;
+	padding:0 0 10px 20px;
+}
+.expert-in h2 span{
+	border-bottom: 2px solid #8db95a;
+}
+
+.faq-links h2 span{
+	border-bottom: 2px solid #f17d27;
+}
+.faq-links a span {
+	display: block;
+	margin-left: 25px;
+}
+.expert-in li,
+.faq-links li{
+	padding: 10px 0;
+}
+.expert-in .fa,
+.faq-links .fa{
+	color: #b8bcc1;
+	margin-right: 10px;
+	font-size: 18px;
+}
+.expert-in .fa:hover{
+	color: #a2c679;
+}
+.faq-links .fa:hover{
+	color: #f17d27;
+}
+.expert-in a,
+.faq-links a{
+	color: #6a7179;
+}
+.expert-in a:hover,
+.faq-links a:hover{
+	color: #3d444e;
+}
+.faq-links .fa{
+	float: left;
+}
+.left-sec.jhonathan{
+	background: url(../images/jhonathan.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.kristen-leftimg {
+	float: left;
+	padding: 20px 0 0 20px;
+}
+.kristen-leftimg img {
+	width: 86px;
+	display: block;
+}
+.kristen {
+	float: right;
+	padding: 20px 40px 0 0;
+	
+}
+.kristen a{
+	color: #8db95a;
+}
+.kristen .fa{
+	font-size: 18px;
+	margin-right: 10px;
+}
+.kristen h3{
+	border-bottom: 1px solid #535a63;
+	font-size: 12px;
+	color: #fff;
+	font-weight:bold;
+	padding-bottom: 10px;
+
+}
+.kristen h3 span {
+	font-size: 18px;
+	display: block;
+	padding-bottom: 5px;
+}
+.kristen h4 {
+	background: url(../images/rating.png) no-repeat left;
+	padding-left: 80px;
+	color: #fff;
+}
+.jhonathan .date-wrap{
+	background: url(../images/transparent-bg.png);
+	padding: 0 15px 15px 15px;
+	margin: 0;
+}
+.Batches h2 {
+	color: #fff;
+	margin:0 ;
+	font-size:12px;
+}
+.Batches h2 span{
+	font-size: 40px;
+	display: block;
+}
+
+
+
+/*  Waqas styling
+-------------------------------------- */
 
 /*  Footer 
 -------------------------------------- */

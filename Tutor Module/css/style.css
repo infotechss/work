@@ -1045,7 +1045,7 @@ ______________________*/
 		padding-top: 73px;
 		text-transform: uppercase;
 		font-weight: 700;
-		margin: 0 61px;
+		margin: 0 60px;
 		color: #b0b6bc;
 		background-position: center top;
 		background-repeat: no-repeat;
@@ -1665,7 +1665,7 @@ ______________________*/
 		font-size: 21px;
 		position: absolute;
 		top: 100%;
-		margin-top: -4px;
+		margin-top: -5px;
 		left: 50%;
 		margin-left: -6px;
 	}
@@ -3502,6 +3502,78 @@ ______________________*/
     margin-right: 18px;
     padding: 2px 4px 1px;
 }
+.no-data{
+	padding-top: 120px;
+}
+.no-data h3{
+	margin: 15px 0 10px;
+	color: #6a7179;
+}
+.no-data p{
+	margin-bottom: 29px;
+}
+.tabs-info h3{
+	color: #6a7179;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.optional-btns{
+	padding: 10px 0 0;
+	text-align: right;
+}
+	.optional-btns a{
+		margin-left: 7px;
+		padding: 7px 12px;
+	}
+#billing-info thead{
+	background: #edeeef;
+	border-top: 1px solid #e2e4e6;
+}
+#billing-info .table > thead > tr > th,
+#billing-info .table > tbody > tr > th,
+#billing-info .table > tfoot > tr > th,
+#billing-info .table > thead > tr > td,
+#billing-info .table > tbody > tr > td,
+#billing-info .table > tfoot > tr > td{
+	border: none;
+}
+#billing-info .table > tbody > tr > td,
+#billing-info .table > thead > tr > th{
+	border-left: 1px solid #e2e4e6;
+}
+#billing-info .table > thead > tr > th{
+	padding: 18px 32px;
+}
+#billing-info .table > tbody > tr > td:first-child,
+#billing-info .table > thead > tr > th:first-child{
+	border-left: none;
+}
+#billing-info .table > tbody > tr > td{
+	padding-left: 32px;
+}
+
+#billing-info .table-responsive label{
+	min-width: 78px;
+}
+#billing-info h2{
+	color: #6a7179;
+	margin-bottom: 20px;
+}
+.acct-setting label{
+	font-weight: 400;
+}
+.gold-clr{
+	color: #cca240;
+}
+.rounded-icon{
+	border: 2px solid #65c6df;
+    border-radius: 100%;
+    color: #65c6df;
+    display: inline-block;
+    margin-right: 22px;
+    padding: 20px;
+}
+
 
 /*  FAQ Popup
 -------------------------------------- */
@@ -3559,11 +3631,15 @@ ______________________*/
 	float: right;
 }
 
-
-
-/*  Waqas styling 
--------------------------------------- */
+/*	Tutor profile	*/
+.sec-sidebar{
+	background: #fff;
+}
 .expert-in{
+}
+.sidebar-links ul{
+	margin: 0;
+	padding: 0 20px 20px;
 }
 .sidebar-links h2{
 	background: #dfe5e6;
@@ -3598,10 +3674,10 @@ ______________________*/
 	margin-right: 10px;
 	font-size: 18px;
 }
-.expert-in .fa:hover{
+.expert-in a:hover .fa{
 	color: #a2c679;
 }
-.faq-links .fa:hover{
+.faq-links a:hover .fa{
 	color: #f17d27;
 }
 .expert-in a,
@@ -3659,9 +3735,15 @@ ______________________*/
 }
 .jhonathan .date-wrap{
 	background: url(../images/transparent-bg.png);
-	padding: 0 15px 15px 15px;
+	padding: 20px 15px 0 15px;
 	margin: 0;
 }
+	.jhonathan .course-date{
+		padding: 0 0 15px;
+	}
+	.jhonathan .start-date{
+		border-right: 1px solid #969594;
+	}
 .Batches h2 {
 	color: #fff;
 	margin:0 ;
@@ -3671,11 +3753,150 @@ ______________________*/
 	font-size: 40px;
 	display: block;
 }
+.tutor-content .optional-btns{
+	padding-top: 20px;
+}
 
+.tutor-content .optional-btns .fa{
+	margin-right: 5px; 
+	font-size: 15px;
+}
+.tutor-content textarea{
+	resize:none;
+}
+.one-online {
+	padding-top: 27px;
+}
+.one-online label{
+	padding-right: 37px;
+}
+.one-online .tutor-dropdown {
+	width: 150px;
+}
+.submit-btn  {
+	padding: 6px 46px !important;
+}
+.tutors-tabs{
+	padding-top: 35px;
+}
+.tutors-tabs .tab-pane{
+	background: #f6f6f6 !important;
+}
+.tutors-tabs .tab-content{
+	border: none;
+}
+.edu-sec {
+	background: #fff;
+}
+.edu-sec h2{
+	margin: 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+.edu-sec label{
+	color: #f17d27;
+	padding-right:5px;
+}
+.edu-sec h2 .fa{
+	color: #9199a3;
+	margin-right: 18px;
 
+}
+.edu-sec a{
+	margin-left: 0;
+}
+.edu-sec p{
+	padding: 15px 84px 0 0;
+	margin: 0;
+}
+.edu-sec h5 {
+	margin: 0;
+	padding-top: 18px;
+	color: #84b050;
+	text-transform: uppercase;
+}
+#tab-3.tab-pane{
+	background: #fff !important;
+	padding: 50px;
+}
+.top-sub {
+	padding-top: 34px;
+}
 
-/*  Waqas styling
--------------------------------------- */
+#tab-3{
+	margin-top: 41px;
+
+}
+
+.chart-sec {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+.chart-sec h2{
+	margin: 0;
+}
+.courses-left,
+.rating-right {
+	padding-top: 22px;
+}
+.courses-left span,
+.rating-right span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.courses-left span .fa{
+	margin-right: 15px;
+}
+.courses-left p{
+	padding: 10px 0 0 0;
+}
+.warning-dim{
+	color: #e9d471;
+}
+.rating-right{
+	text-align: right;
+}
+.batches-info{
+	text-align: center;
+}
+.batches-info img{
+	margin-bottom: 48px;
+}
+.batches-info .batches-comp{
+	padding-right: 25px;
+	display: inline-block;
+	line-height: 1.5;
+	color: #3d444e;
+	text-align: left;
+}
+.batches-info .num{
+	border-left: 1px solid #e2e4e6;
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 40px;
+	color: #32b1d2;
+	line-height: 0.8;
+	font-weight: 300;
+}
+.tutor-dropdown{
+	background: #fff;
+	width: 100%;
+	border: 1px solid #d1d1d1;
+    color: #9ca4ac;
+    text-align: left;
+}
+.tutor-dropdown .dropdown-menu{
+	width: 100%;
+}
+	.tutor-dropdown .caret{
+		margin-top: 7px;
+		float: right;
+	}
+
+.dropdown-menu{
+	right: 0;
+}
 
 /*  Footer 
 -------------------------------------- */

@@ -1875,6 +1875,15 @@ ______________________*/
 	.math-banner span:first-child{
 		font-size: 30px;
 	}
+	.banner-txt p{
+		display: block;
+		width: 380px;
+		line-height: 1.3;
+		margin-bottom: 0;
+		color: #5a626f;
+		float: left;
+		text-align: left;
+	}
 	.tutor-banner a,
 	.math-banner a{
 		margin: 6px 0 0;
@@ -3559,6 +3568,22 @@ ______________________*/
 	color: #6a7179;
 	margin-bottom: 20px;
 }
+.subcribe-info{
+	margin-bottom: 110px;
+	padding-top: 68px;
+}
+.subcribe-info h3{
+	margin-top: 2px;
+}
+.no-data .fourth-step h2{
+	color: #fff !important;
+}
+.no-data .fourth-step h3{
+	margin-bottom: 20px;
+}
+.no-data .fourth-step p{
+	margin-bottom: 13px;
+}
 .acct-setting label{
 	font-weight: 400;
 }
@@ -3879,6 +3904,94 @@ ______________________*/
 	line-height: 0.8;
 	font-weight: 300;
 }
+#inner-tabs .nav-tabs{
+	border: none;
+}
+	#inner-tabs .nav-tabs a{
+		border: none;
+		padding: 3px 10px 5px;
+		color: #b0b6bc;
+		border-radius: 5px;
+	}
+	#inner-tabs .nav-tabs a:hover{
+		background:none;
+	}
+	#inner-tabs .nav-tabs > .active > a{
+		background: #8390a1 !important;
+		color: #fff !important;
+		
+	}
+	#inner-tabs .nav-tabs .active a:focus,
+	#inner-tabs .nav-tabs a:focus{
+		outline: none;
+	}
+.about-sub{
+	border: 1px solid #ddd;
+	background: #fff;
+	margin-top: 40px;
+}
+	.sub-cover {
+		width: 163px;
+		float: left;
+	}
+		.sub-cover img {
+			display: block;
+			width: 100%;
+			height: 158px;
+		}
+		.sub-cover a{
+			display: block;
+		}
+	.sub-info {
+		padding-left: 183px;
+		border-bottom: 1px solid #ddd;
+	}
+		.sub-info h3{
+			font-weight: 700;
+			padding: 17px 0 11px 0;
+		}
+
+
+	.sub-details > div {
+		border-left: 1px solid #ddd;
+		width: 133px;
+		float: left;
+		line-height: 0.8;
+		padding-left: 25px;
+		min-height: 59px;
+	}
+		.sub-details > div:first-child{
+			border-left: none;
+			padding-left: 0;}
+
+		.sub-details p{
+			margin-bottom: 2px;
+		}
+		.sub-details span{
+			font-size: 40px;
+			display: inline-block;
+		}
+		.sub-details .sub-date {
+			font-size: 12px;
+			width: 32px;
+			line-height: 1.4;
+		}
+
+	.recent-review h5{
+		color: #f17d27;
+		padding: 7px 0 0 20px ;
+	}
+	.recent-review p{
+		padding:0 20px; 
+	}
+	.sub-rating img{
+		padding-top: 10px;
+		display: block;
+	}
+	#sub-1 .loading-more {
+		padding-top: 35px;
+	}
+
 .tutor-dropdown{
 	background: #fff;
 	width: 100%;
@@ -3976,6 +4089,7 @@ ______________________*/
 .light-gray-bg{
 	background:#f6f6f6;
 }
+.cl{ clear:both; font-size:0; height:0; }
 
 @media (max-width: 1200px){
 	.receive-field .form-control{

@@ -4555,6 +4555,9 @@ ______________________*/
 	nav{
 		display: block !important;
 	}
+	.sec-sidebar{
+		display: block !important;
+	}
 }
 @media (max-width: 767px) {
 	h1{

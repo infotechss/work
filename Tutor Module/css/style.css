@@ -246,6 +246,9 @@ ______________________*/
 		margin-right: 46px;
 		float:left;
 	}
+	.nav-custom li:last-child{
+		margin-right: 0;
+	}
 		.nav-custom li a{
 			padding:36px 0;
 			text-transform: uppercase;
@@ -728,6 +731,7 @@ ______________________*/
 }
 	.search-bar{
 		position: relative;
+		text-align: right;
 	}
 	.search-bar input{
 		display: block;
@@ -1875,15 +1879,6 @@ ______________________*/
 	.math-banner span:first-child{
 		font-size: 30px;
 	}
-	.banner-txt p{
-		display: block;
-		width: 380px;
-		line-height: 1.3;
-		margin-bottom: 0;
-		color: #5a626f;
-		float: left;
-		text-align: left;
-	}
 	.tutor-banner a,
 	.math-banner a{
 		margin: 6px 0 0;
@@ -3015,8 +3010,43 @@ ______________________*/
 -------------------------------------- */
 .tutor-banner{
 	background: #d4ecf2 url(../images/tutor-banner.jpg) no-repeat;
+	margin-bottom: 40px;
+	padding: 26px 0;
 }
+.banner-txt{
+	padding-top: 7px;
+}
+.banner-txt.left{
+	color: #fff;
+	padding: 0 0 0 30px;
+}
+	.banner-txt.left span{
+		text-transform: uppercase;
+		display: block;
+		font-size: 14px;
+		text-align: left;
+		line-height: 0.8;
+		margin-bottom: 3px;
+	}
+	.banner-txt.left strong{
+		display: block;
+		margin-top: 3px;
+	}
+	.banner-txt.left .membership{
+		font-size: 27px;
+		margin-bottom: 0;
+	}
+	.banner-txt p{
+		display: block;
+		width: 380px;
+		line-height: 1.3;
+		margin: 0 20px 0 0;
+		color: #5a626f;
+		float: left;
+		text-align: left;
+	}
 .progress-in{
+	margin-bottom: 38px;
 	border: 1px solid #d1d1d1;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -3026,11 +3056,13 @@ ______________________*/
 }
 	.progress-header{
 		background: #efefef;
-		padding: 16px 20px;
+		padding: 11px 20px;
 		text-align: left;
 	}
 		.progress-header h3{
+			color: #6a7179;
 			margin-bottom: 0;
+			padding-top: 5px;
 		}
 		.progress-opts{
 			text-align: right;
@@ -3044,8 +3076,8 @@ ______________________*/
 				.progress-opts .btn-add i{
 					color: #32b1d2;
 					font-size: 18px;
-					vertical-align: middle;
 					margin-right: 8px;
+					vertical-align: middle;
 				}
 			.progress-opts a{
 				position: inherit;
@@ -3077,8 +3109,127 @@ ______________________*/
 	    margin: 0 0 14px;
 	    width: 98%;
 	}*/
-	.progress-states{
-
+	.course-widget .table{
+		margin-bottom: 10px;
+		border-top: 1px solid #dedfe0;
+	}
+		.course-widget thead{
+			background: #efefef;
+			text-transform: uppercase;
+		}
+		.course-widget thead a{
+			display: block;
+			float: right;
+		}
+		.course-widget thead .fa{
+			font-size: 14px;
+			color: #d6d8d9;
+		}
+		.course-widget tbody a{
+			display: block;
+			padding: 8px 14px;
+		}
+		.course-widget .table > thead > tr > th{
+			border: none;
+			padding: 20px 20px 20px 0;
+		}
+		.course-widget .table > tbody > tr > td{
+			border-bottom: 1px solid #f2f3f3;
+			padding: 28px 20px 4px 0;
+		}
+		.course-widget .table > tbody > tr:last-child > td{
+			border-bottom: none;
+		}
+		.course-widget .table > thead > tr > th:first-child,
+		.course-widget .table > tbody > tr > td:first-child{
+			padding-left: 20px;
+		}
+		.course-widget .table > thead > tr > th:last-child{
+			padding: 20px;
+		}
+		.course-widget .table > tbody > tr > td:last-child{
+			padding: 20px 20px 0 20px;
+		}
+	.course-widget .table .progress{
+		background: none;
+		height: 6px;
+		margin-top: 5px;
+		border: 1px solid #dadada;
+		box-shadow: none;
+	}
+	.to-do-list,
+	.recent-courses{
+		text-align: left;
+		border: 1px solid #d1d1d1;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+	}
+		.to-do-list p{
+			margin: 0;
+			border-bottom: 1px solid #f0f0f1;
+			padding: 18px 20px 8px;
+			line-height: 1.5;
+			text-transform: uppercase;
+		}
+			.to-do-list span{
+				display: block;
+				text-transform: capitalize;
+			}
+	.recent-courses h3{
+		padding: 18px 0 14px;
+	}
+	.recent-courses .tab-navs{
+		background: none;
+		border: none;
+		float: left;
+	}
+		.recent-courses .tab-navs li{
+			margin: 0 26px 0 0;
+		}
+		.recent-courses .tab-navs li a{
+			color: #cdced0;
+			padding: 23px 0 17px;
+		}
+		.recent-courses .tab-navs li a:hover{
+			background: none;
+		}
+		.recent-courses .tab-navs .active a{
+			color: #6a7179;
+		}
+	.recent-courses .progress-opts{
+		padding-top: 12px;
+		float: right;
+	}
+	.recent-courses .progress-header{
+		padding: 0 20px;
+	}
+	.recent-courses #tab-1{
+		padding: 0;
+	}
+		.setting-icon{
+			padding: 0 !important;
+			color: #d4d6d7;
+			font-size: 14px;
+			float: right;
+		}
+		.setting-icon:hover{
+			color: #32b1d2;
+		}
+	.recent-courses .table{
+		margin-bottom: 0;
+	}
+	.recent-courses .course-widget .table > tbody > tr > td{
+		padding-top: 12px;
+		padding-bottom: 11px;
+	}
+	.view-all{
+		padding: 0 20px 19px 0;
+	}
+	.widget-sec{
+		margin-bottom: 60px;
 	}
 
 /*  Tutor Registraion 
@@ -3227,7 +3378,7 @@ ______________________*/
 		}
 			
 			.teaching-exp .select-exp{
-				margin-right: 24px;
+				margin-right: 73px;
 			}
 				.teaching-exp .select-exp span{
 					margin-right: 48px;
@@ -3407,7 +3558,8 @@ ______________________*/
 		color: #65c6df;
 		margin-right: 10px;
 	}
-.about-tutor{
+.about-tutor .row{
+	margin: 0;
 }
 	.about-tutor h3{
 		background: #efeff0;
@@ -3586,6 +3738,12 @@ ______________________*/
 }
 .acct-setting label{
 	font-weight: 400;
+}
+.save-btn{
+	margin-bottom: 20px;
+}
+.acct-setting .tab-navs li{
+	margin: 0 46px 0 0;
 }
 .gold-clr{
 	color: #cca240;
@@ -4129,8 +4287,39 @@ ______________________*/
 	.lec-title{
 		width: 345px;
 	}
+	.acct-setting .tab-navs li{
+		margin-right: 15px;
+	}
+	.teaching-exp .select-exp{
+		margin-right: 10px;
+	}
+	.teaching-exp .select-class{
+		margin-left: 8px !important;
+	}
+	.tutor-steps .step{
+		margin: 0 40px;
+	}
+	.jhonathan .course-date{
+		padding: 0 0 12px;
+	}
+	.kristen{
+		padding: 20px 20px 0 0;
+	}
+	#inner-tabs ul{
+		padding: 0;
+	}
+	.sub-details > div{
+		width: 115px;
+		padding-left: 15px;
+	}
+	.sub-details > div:first-child{
+		width: 80px;
+	}
 }
 @media (max-width: 992px) {
+	h2{
+		font-size: 18px;
+	}
 	h3{
 		font-size: 16px;
 	}
@@ -4143,6 +4332,9 @@ ______________________*/
     .nav-custom li{
     	margin: 0 18px 0 0;
     	padding: 0 5px;
+    }
+    .nav-custom li:first-child{
+    	padding-left: 0;
     }
     .image-field{
     	width: 467px;
@@ -4278,6 +4470,86 @@ ______________________*/
 	.logged-in #sidebar{
 		width: 81px;
 	}
+	.banner-txt{
+		padding-top: 0;
+	}
+		.banner-txt p{
+			width: 280px;
+		}
+	.recent-courses .tab-navs li{
+		margin-right: 6px;
+	}
+	.acct-setting .tab-navs li{
+    	margin-right: 16px;
+    	padding: 0;
+    }
+    .acct-setting .tab-navs li:last-child{
+    	margin-right: 0;
+    }
+	.acct-setting .tab-navs li a{
+		font-size: 9px;
+	}
+	.tutor-steps .step{
+		margin: 0 18px;
+	}
+	.tutor-steps .border-bg{
+		right: 50px;
+		left: 70px;
+	}
+	.tutor-categories h5{
+		min-height: 26px;
+		margin-bottom: 10px;
+	}
+	.tutor-categories input{
+		margin-right: 7px;
+	}
+	.dob button{
+		padding: 6px;
+	}
+	.upload-photo img{
+		width: 60px;
+		height: 60px;
+	}
+	.upload-photo .upload-field{
+		margin-left: 70px;
+	}
+	.upload-photo span{
+		font-size: 11px;
+		margin-left: 5px;
+	}
+	.teaching-exp button{
+		padding: 6px 9px;
+	}
+	.teaching-exp .select-exp span{
+		margin-right: 8px;
+	}
+	.teaching-exp .select-class{
+		margin-left: 4px !important;
+	}
+		.teaching-exp .select-class span{
+			margin-right: 8px;
+		}
+	.add-info h2{
+		padding-top: 4px;
+	}
+	.sec-info{
+		margin-left: 100px;
+	}
+	.about-tutor h3{
+		padding: 15px;
+	}
+		.about-tutor h3 span{
+			padding: 12px 16px 14px;
+		}
+	.back-link a{
+		font-size: 11px;
+	}
+	.faq-popup{
+		padding: 25px;
+	}
+	.faq-popup a{
+		font-size: 12px;
+	}
 }
 @media (min-width: 768px) {
 	nav{
@@ -4285,6 +4557,12 @@ ______________________*/
 	}
 }
 @media (max-width: 767px) {
+	h1{
+		font-size: 22px;
+	}
+	.recent-review p{
+		padding: 0 15px 15px;
+	}
 	.navbar{
 		padding-top: 3px;
 	}
@@ -4303,9 +4581,6 @@ ______________________*/
 		.nav-btn i{
 			color: #32b1d2;
 		}
-	.search-bar{
-		text-align: right;
-	}
 		.search-bar input{
 			display: none;
 		}
@@ -4428,6 +4703,14 @@ ______________________*/
 		#footer-center h3{
 			margin-bottom: 10px;
 		}
+	.footer-nav{
+		text-align: center;
+	}
+		.footer-nav li{
+			display: inline-block;
+			margin: 0 6px 12px;
+			float: none;
+		}
 	#footer-right p{
 		background-size: auto 100%;
 		margin-bottom: 20px;
@@ -4466,6 +4749,199 @@ ______________________*/
 	.user-tabs > ul .fa{
 		display: none;
 	}
+	.back-link{
+		padding: 10px 0 0;
+		text-align: center;
+	}
+	.back-link a{
+		font-size: 9px;
+		margin-bottom: 10px;
+	}
+	.acct-setting .tab-navs,
+	.recent-courses .tab-navs,
+	.user-tabs ul{
+		text-align: center;
+		padding-top: 10px;
+	}
+	.recent-courses .tab-navs,
+	.recent-courses .progress-opts{
+		float: none;
+	}
+	.acct-setting .tab-navs li,
+	.recent-courses .tab-navs li,
+	.user-tabs ul li{
+		margin-bottom: 6px;
+		float: none !important;
+		display: inline-block;
+	}
+	.user-tabs ul li{
+		margin: 0 10px 10px;
+	}
+	.acct-setting .tab-navs li a,
+	.recent-courses .tab-navs li a,
+	.user-tabs ul li a{
+		padding: 0 0 2px;
+	}
+	}
+	.sign-links{
+		text-align: center;
+		padding-top: 10px;
+	}
+	.copyright{
+		padding-top: 0;
+	}
+	.tutor-banner{
+		background-image: none;
+		text-align: center;
+		padding: 10px;
+	}
+		.banner-txt.left .membership{
+			font-size: 20px;
+		}
+		.banner-txt.left{
+			margin-bottom: 10px;
+			padding: 0;
+		}
+		.banner-txt.left span{
+			text-align: center;
+		}
+		.banner-txt.left strong{
+			display: inline-block;
+		}
+		.banner-txt p{
+			text-align: center;
+			width: auto;
+			float: none;
+		}
+	.progress-opts{
+		padding-top: 10px;
+	}
+	.progress-header,
+	.progress-opts{
+		text-align: center;
+	}
+	.main-top{
+		margin-bottom: 10px;
+	}
+	.border-bg{
+		display: none;
+	}
+	.tutor-steps{
+		padding: 20px 0 0;
+	}
+		.tutor-steps .step{
+			background-size: 50px;
+			margin: 0 10px 10px;
+			padding-top: 60px;
+		}
+	.choose-category,
+	.add-category,
+	.tutor-categories{
+		text-align: center;
+	}
+	.tutor-categories{
+		margin-bottom: 20px;
+	}
+	.tutor-categories h5{
+		min-height: inherit;
+	}
+	.tutor-categories label{
+		display: inline-block;
+		margin: 5px 10px;
+	}
+	.dob .btn{
+		margin-bottom: 5px;
+	}
+	.tutoring-exp,
+	.teaching-time .form-group,
+	.personal-data label{
+		margin-bottom: 10px;
+	}
+	.offer-demo label{
+		margin-bottom: 0;
+	}
+	.sec-icon{
+		display: none;
+	}
+	.sec-info{
+		margin: 0;
+		float: none;
+	}
+	.fourth-step .plan{
+		margin: 0 0 10px;
+	}
+	.add-info{
+		text-align: center;
+	}
+		.add-info h2{
+			float: none;
+		}
+	.inline-btns{
+		margin-bottom: 10px;
+		float: none;
+	}
+	.edit-profile .tutor-name img{
+		display: block;
+	}
+	.sec-sidebar{
+		display:none;
+	}
+	.tutor-content .optional-btns{
+		text-align:center;
+	}
+	.gray-border{
+		text-align:center;
+	}
+	.one-online{
+		text-align:center;
+	}
+	.edu-sec p{
+		padding:10px 0 0 0;
+	}
+	.sub-cover{
+		float:none;
+		max-width:100%;
+		height:auto;
+		width:auto;
+	}
+	.sub-details > div{
+		float:none;
+		border:none;
+		width:auto;
+		margin-bottom:15px;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.sub-details > div:first-child{
+		width:auto;
+	}
+	.sub-info{
+		padding:0;
+		text-align:center;
+	}
+	.sub-rating img{
+		display:inline-block;	
+	}
+	#inner-tabs ul li{
+		margin-bottom:6px;
+	}
+	#tab-3.tab-pane{
+		padding: 16px;
+	}
+	.batches-info{
+		text-align: center;
+	}
+	.batches-info img{
+		display: inline-block;
+		margin: 0 0 20px;
+	}
+	.batches-info > span{
+		display: block;
+	}
+	.tutor-main .main-top{
+		text-align: left;
+	}
+
 }
 @media (max-width: 480px) {
 	h1{
@@ -4690,6 +5166,7 @@ ______________________*/
 	.exit-btn {
 		top: 0;
 		right: 25px;
+		z-index: 1;
 	}
 	.three-steps h2{
 		margin-bottom: 15px;
@@ -4724,6 +5201,18 @@ ______________________*/
 	}
 	.fb-like{
 		top: 44px;
+	}
+	.device-img{
+		width: 70px;
+	}
+	.google-imgs img{
+		width: 60px;
+	}
+	.course-widget thead .fa{
+		display: none;
+	}
+	.txt-border label{
+		margin:0;
 	}
 }
 

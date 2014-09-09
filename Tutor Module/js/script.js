@@ -36,7 +36,7 @@ j$(document).ready(function(){
 	})
 
 
-	// j$(".logged-in").removeClass("logged-in");
+	j$(".logged-in").removeClass("logged-in");
 	
 	var j$scrollbar = j$("#scrollbar1");
 	j$scrollbar.tinyscrollbar();

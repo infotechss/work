@@ -18,25 +18,33 @@ j$(document).ready(function(){
 		if ( j$(this).parent().hasClass('active') ) {
 			j$(".faq-popup li").removeClass("active");
 			j$(".faq-info").slideUp();
-			j$(this).children(".right-icon").removeClass("fa-chevron-circle-down")
-			j$(this).children(".right-icon").addClass("fa-chevron-circle-right")
+			j$("this").children(".right-icon").removeClass("fa-chevron-circle-down");
+			j$(this).children(".right-icon").addClass("fa-chevron-circle-right");
 
 		}
 		else{
 			j$(".faq-popup li").removeClass("active");
 			j$(".faq-info").slideUp();
+			j$(".faq-popup a").children(".right-icon").removeClass("fa-chevron-circle-down");
 			j$(this).parent().addClass("active");
 			j$(this).next('.faq-info').slideDown();
 			j$(this).parent().addClass("active");
-			j$(this).children(".right-icon").removeClass("fa-chevron-circle-down")
-			j$(this).children(".right-icon").addClass("fa-chevron-circle-down")
+			j$(this).children(".right-icon").removeClass("fa-chevron-circle-down");
+			j$(this).children(".right-icon").addClass("fa-chevron-circle-down");
 		}
 				
 		return false;
 	})
 
+	j$(".email-btn").click(function(){
+		j$(".contact-us").fadeToggle();
+		j$(this).toggleClass("active");
+		return false;
+	})
 
-	j$(".logged-in").removeClass("logged-in");
+
+
+	// j$(".logged-in").removeClass("logged-in");
 	
 	var j$scrollbar = j$("#scrollbar1");
 	j$scrollbar.tinyscrollbar();

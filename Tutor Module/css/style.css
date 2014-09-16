@@ -1442,6 +1442,7 @@ ______________________*/
 			}
 		.notifications{
 			position: relative;
+			margin-bottom: 30px;
 			padding: 28px 30px 0;
 		}
 			.notifications h3{
@@ -1468,6 +1469,131 @@ ______________________*/
 			.notifications h3{
 				color: #fff;
 			}
+		.invite-frnds{
+			background: #727b87;
+			text-align: center;
+			margin: 0 30px;
+		}
+		.invite-frnds h2{
+			margin: 4px 0 12px;
+			line-height: 0.9;
+		}
+		.invite-frnds h2 strong{
+			display: block;
+		}
+		.invite-frnds p{
+			color: #fff;
+			line-height: 1.2;
+			margin-bottom: 0;
+			padding: 32px 10px 10px;
+		}
+		.user-bg{
+			background: #fff url(../images/users-bg.png) no-repeat center bottom;
+			padding: 10px 10px 50px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+			position: relative;
+		}
+		.user-bg button{
+			background: #fff;
+			color: #32b1d2;
+			font-size: 22px;
+			border: none;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			-ms-border-radius: 100px;
+			-o-border-radius: 100px;
+			border-radius: 100px;
+			padding: 10px 12px;
+			position: absolute;
+			bottom: -23px;
+			left: 50%;
+			margin-left: -23px;
+		}
+		.social-links{
+			text-align: center;
+			padding: 0 10px 15px;
+		}
+		.social-links a{
+			display: inline-block;
+			color: #b8bcc1;
+			margin: 0 12px;
+			font-size: 20px;
+		}
+		.social-links a:hover{
+			color: #32b1d2;
+		}
+		.contact-us{
+			display: none;
+			background: #fff;
+			position: absolute;
+			bottom: 78px;
+			right: 78px;
+			border: 1px solid #32b1d2;
+		}
+		.contact-us .inner{
+			width: 356px;
+			padding: 15px 20px 20px 30px;
+		}
+		.contact-us .fa-caret-down{
+			font-size: 25px;
+			color: #fff;
+			position: absolute;
+			top: 100%;
+			right: 16px;
+			margin-top: -9px;
+		}
+		.contact-us h2{
+			margin: 0 0 20px;
+			padding: 0 0 17px;
+		}
+		.panel-bot{
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+		}
+		.contact-us textarea{
+			height: 108px;
+			resize: none;
+		}
+		.contact-us form{
+			text-align: right;
+		}
+		.contact-us label{
+			display: block;
+			text-align: left !important;
+			font-weight: normal;
+		}
+		.send-btn{
+			padding: 6px 24px;
+		}
+		.panel-bot a{
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			-ms-border-radius: 100px;
+			-o-border-radius: 100px;
+			border-radius: 100px;
+			text-align: center;
+			border: 1px solid #5bc1db;
+			width: 48px;
+			height: 48px;
+			display: inline-block;
+			line-height: 44px;
+			font-size: 23px;
+			color: #99d8e9;
+			margin-left: 8px;
+		}
+		.panel-bot a.active,
+		.panel-bot a:hover{
+			color: #fff;
+			border-color: #fff;
+		}
+		.panel-bot a:focus{
+			outline: none;
+		}
 		.side-border{
 			position: absolute;
 			left: 47px;
@@ -3057,7 +3183,6 @@ ______________________*/
 	.progress-header{
 		background: #efefef;
 		padding: 11px 20px;
-		text-align: left;
 	}
 		.progress-header h3{
 			color: #6a7179;
@@ -4784,7 +4909,6 @@ ______________________*/
 	.recent-courses .tab-navs li a,
 	.user-tabs ul li a{
 		padding: 0 0 2px;
-	}
 	}
 	.sign-links{
 		text-align: center;

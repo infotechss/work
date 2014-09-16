@@ -20,6 +20,7 @@
     
     <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/tinyscrollbar.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     
     <!--[if lte IE 8]>
@@ -412,9 +413,9 @@
 										<!-- Nav tabs -->
 										<ul class="nav nav-tabs" role="tablist">
 											<li><a href="#discuss" role="tab" data-toggle="tab"><i class="fa fa-wechat"></i>Discussion<i class="fa fa-caret-down"></i></a></li>
-											<li class="active"><a href="#announcement" role="tab" data-toggle="tab"><i class="fa fa-volume-up"></i>Announcement<i class="fa fa-caret-down"></i></a></li>
+											<li><a href="#announcement" role="tab" data-toggle="tab"><i class="fa fa-volume-up"></i>Announcement<i class="fa fa-caret-down"></i></a></li>
 											<li><a href="#download" role="tab" data-toggle="tab"><i class="fa fa-download"></i>Download<i class="fa fa-caret-down"></i></a></li>
-											<li><a href="#settings" role="tab" data-toggle="tab"><i class="fa fa-file-text"></i>Note<i class="fa fa-caret-down"></i></a></li>
+											<li class="active"><a href="#settings" role="tab" data-toggle="tab"><i class="fa fa-file-text"></i>Note<i class="fa fa-caret-down"></i></a></li>
 										</ul>
 
 										<!-- Tab panes -->
@@ -493,7 +494,7 @@
 													</li>
 												</ul>
 											</div>
-											<div class="tab-pane active" id="announcement">
+											<div class="tab-pane" id="announcement">
 												<ul>
 													<li>
 														<span class="user-pic">
@@ -587,7 +588,64 @@
 												<a href="#"><span><i class="fa fa-file-pdf-o"></i>Business development syllabus pdf document</span><i class="fa fa-chevron-circle-right"></i></a>
 												<a href="#"><span><i class="fa fa-twitter"></i>Smit Carl (Tutor)  on Twitter</span><i class="fa fa-chevron-circle-right"></i></a>
 											</div>
-											<div class="tab-pane" id="settings">Note</div>
+											<div class="tab-pane active" id="note">
+												<div class="binder">
+													<img class="binder-left" src="images/binder-left.png" alt="">
+													<img class="binder-right" src="images/binder-right.png" alt="">
+												</div>
+												<div class="cmt-book">
+													<div id="scrollbar1">
+					                                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+					                                    <div class="viewport">
+					                                         <div class="overview">
+					                                         	<div class="cmt-field">
+																	<input type="text" placeholder="Write your comment" class="form-control">
+																</div>
+																<div class="cmt-sec">
+																	<div class="page-lines">
+						                                         		<div class="cmt-duration">
+						                                         			<img src="images/cmt-duration.png" alt="">
+						                                         			<span>Duration</span>
+						                                         			<h3>00:47</h3>
+						                                         		</div>
+						                                         		<div class="cmt">
+						                                         			<p>We want to learn more about computer</p>
+						                                         			<p>science theory</p>
+						                                         			<div class="edit-cmt">
+						                                         				<a href="#"><i class="fa fa-pencil"></i></a>
+						                                         				<a href="#"><i class="fa fa-times-circle"></i></a>
+						                                         			</div>
+						                                         		</div>
+						                                         	</div>
+						                                         	<div class="page-lines">
+						                                         		<div class="cmt-duration">
+						                                         			<img src="images/cmt-duration.png" alt="">
+						                                         			<span>Duration</span>
+						                                         			<h3>00:35</h3>
+						                                         		</div>
+						                                         		<textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="They are all about the thought processes nvolve  when will capturing a perfect"></textarea>
+						                                         	</div>
+						                                         	<div class="page-lines">
+						                                         		<div class="cmt-duration">
+						                                         			<img src="images/cmt-duration.png" alt="">
+						                                         			<span>Duration</span>
+						                                         			<h3>00:47</h3>
+						                                         		</div>
+						                                         		<div class="cmt">
+						                                         			<p>We want to learn more about science</p>
+						                                         			<p>science theory lorem ipsum</p>
+						                                         			<div class="edit-cmt">
+						                                         				<a href="#"><i class="fa fa-pencil"></i></a>
+						                                         				<a href="#"><i class="fa fa-times-circle"></i></a>
+						                                         			</div>
+						                                         		</div>
+						                                         	</div>
+																</div>
+					                                        </div>
+					                                    </div>
+					                                </div>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="loading-more">
@@ -728,6 +786,7 @@
 
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 
 </body>

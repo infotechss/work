@@ -36,6 +36,11 @@ j$(document).ready(function(){
 		return false;
 	})
 
+	j$(".exit-btn").click(function(){
+		j$(".tutor-banner").hide(800);
+		return false;
+	})
+
 	j$(".email-btn").click(function(){
 		j$(".contact-us").fadeToggle();
 		j$(this).toggleClass("active");

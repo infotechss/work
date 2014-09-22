@@ -295,9 +295,39 @@ ______________________*/
 	.course-elements h5{
 		margin-bottom:20px;
 	}
+	.field-length{
+		position: relative;
+	}
+	span.field-length{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.field-length .fa-info-circle{
+		font-size: 18px;
+		color: #9ca1a6;
+		cursor: default;
+	}
+	.field-length .fa-info-circle:hover{
+		color: #32b1d2;
+	}
+	.field-length span{
+		color: #4a515a;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		z-index: 1;
+	}
+	.field-length a:hover{
+		opacity: 0.8;
+	}
+	.field-length a i{
+		color: #e26e16;
+		font-size: 19px;
+		vertical-align: -3px;
+		margin-left: 13px;
+	}
 .course-form{
-	border-bottom:2px solid #eaebec;
-	padding-bottom:50px;
+	padding-bottom:10px;
 	margin-bottom:20px;
 }
 	.course-form label{
@@ -308,13 +338,27 @@ ______________________*/
 }
 	.course-summary textarea{
 		width: 100%;
+		height: 177px;
+		padding-top: 37px;
 		resize: none;
+		position: relative;
+	}
+	.toolbox{
+		border-bottom: 1px solid #b8b8b8;
+		padding: 0 11px;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
 	}
 .inline-field input{
-	max-width: 300px;
+	width: 320px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 20px;
+}
+.inline-field input:first-child{
+	width: 305px;
 }
 .inline-field label{
 	display: inline-block;
@@ -337,9 +381,13 @@ ______________________*/
 	background:#505861;
 	color:#fff;
 }
+.upload-link{
+	text-align: right;
+}
 .form-control{
 	color:#9ca4ac;
 	border-radius: 2px;
+	padding: 6px 72px 6px 12px;
 }
 .btn-add{
 	background:#505861;
@@ -370,6 +418,9 @@ ______________________*/
 	border-radius: 2px;
 	padding: 12px 19px;
 }
+.pager > li > a:hover{
+	color: #32b1d2;
+}
 	.pager .btn-prev {
 		background: #b0b6bc;
 	}
@@ -377,7 +428,7 @@ ______________________*/
 		background: #32b1d2;
 	}
 .image-field{
-	width: 817px;
+	width: 803px;
 	margin-right: 20px;
 	display: inline-block;
 }
@@ -392,6 +443,28 @@ ______________________*/
 	background:#fff;
 	padding:20px;
 }
+	.dummy-course-info i{
+		font-size: 16px;
+		margin-top: 11px;
+		border: 1px solid #a94442;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		-o-border-radius: 100px;
+		border-radius: 100px;
+		padding: 2px 7px 0;
+		float: left;
+	}
+	.dummy-course-info.v-2 i{
+		margin-top: 0;
+	}
+	.dummy-course-info i.fa-lightbulb-o{
+		border: 1px solid #31708f;
+		padding: 1px 5px;
+	}
+	.dummy-course-info p{
+		padding-left: 36px;
+	}
 	.cover-view{
 		background: #f4f4f4;
 		text-align: center;
@@ -406,13 +479,28 @@ ______________________*/
 	.dummy-course a{
 		color:#33b2d2;
 	}
+	.company-tabs button{
+		min-height: 32px;
+	}
+	.field-btn button{
+		float: right;
+	}
 .badge{
 	background:#d5dadf;
-	border-radius:10px;
-	padding:4px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	border-radius: 100px;
+	font-size: 10px;
+	padding: 4px;
 	color:#000;
-	margin-right:6px;
+	margin-left:8px;
 	vertical-align: middle;
+}
+button .badge{
+	margin-right: 6px;
+	padding: 4px 5px;
 }
 .badge.check{
 	background:#8db85c;
@@ -433,8 +521,12 @@ ______________________*/
 	.first-quiz .branch-circle i{
 		color: #e3b13d;
 	}
+.btn-right{
+	text-align: right;
+}
 .btn-comment{
 	background:#b0b6bc;
+	margin: 6px 0;
 	color:#fff;
 }
 .section1,
@@ -573,6 +665,7 @@ ______________________*/
 }
 .coupon-code{
 	background: #fff;
+	margin-bottom: 26px;
 	border: 2px solid #8db85c;
 	border-radius: 2px;
 	padding-right: 30px;
@@ -681,24 +774,28 @@ ______________________*/
 	color:#fff;
 	text-shadow:none;
 }
-.price-field{
-	position: relative;
+.price-field .btn-group{
+	display: inline-block;
+}
+.price-field label{
 	font-weight: normal;
 	margin: 0 6px 0 0;
 	vertical-align: middle;
 }
-	.price-field input{
-		display: inline-block;
-		width: 194px;
-		margin-left: 12px;
-		padding: 6px 34px;
-	}
-.dollar-sign{
+.price-field input{
+	margin-right: 8px;
+	padding: 6px 34px;
+}
+.price-field .field-length{
+	margin-right: 8px;
+}
+span .fa-dollar{
 	font-size: 17px;
 	font-weight: 900;
+	color: #9ca1a6;
 	position: absolute;
-	left: 54px;
-	top: 6px;
+	left: 12px;
+	top: 9px;
 }
 .opt-btns{
 	display: inline-block;
@@ -1097,12 +1194,23 @@ ______________________*/
 	padding-bottom: 37px;
 	border-width: 2px;
 }
+.create-comp{
+	margin-bottom: 60px;
+}
 #about-company{
 	border: 1px solid #d1d1d1;
 	resize: none;
 	width: 100%;
 	height: 127px;
+	margin: 26px 0 28px;
 	padding: 5px;
+}
+.primary-contact label{
+	margin-bottom: 0;
+	padding: 7px 0 0;
+}
+.noti-setting{
+	margin-top: 60px;
 }
 .contact-form .icon-field i{
 	top: 10px;
@@ -1160,8 +1268,10 @@ ______________________*/
 		margin-bottom: 20px;
 	}
 	.plan p{
+		width: 136px;
+		text-align: left;
 		color: #6a7179;
-		margin-bottom: 15px;
+		margin: 0 auto 15px;
 	}
 	.select-plan{
 		color: #fff;
@@ -1381,6 +1491,7 @@ ______________________*/
 			padding: 18px 30px 17px;
 		}
 			.became-tutor i{
+				color: #32b1d2;
 				margin-left: 42px;
 				display: inline-block;
 			}
@@ -3058,18 +3169,18 @@ ______________________*/
 	background:#f6f6f6;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
 	.receive-field .form-control{
     	width: 297px;
     }
-    .nav-custom li{
-    	margin-left: 32px;
-    }
     .inline-field input{
-    	width: 219px;
+    	width: 223px;
+    }
+    .inline-field input:first-child{
+		width: 236px;
     }
     .image-field{
-    	width: 650px;
+    	width: 637px;
     }
     .video-fields input{
     	width: 658px;
@@ -3097,7 +3208,7 @@ ______________________*/
 		width: 345px;
 	}
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	h3{
 		font-size: 16px;
 	}
@@ -3112,7 +3223,7 @@ ______________________*/
     	padding: 0 5px;
     }
     .image-field{
-    	width: 467px;
+    	width: 453px;
     }
     .video-fields input{
     	width: 474px;
@@ -3126,6 +3237,12 @@ ______________________*/
     }
     .side-nav .nav-links{
     	display: none;
+    }
+    .inline-field input{
+    	width: 116px;
+    }
+    .inline-field input:first-child{
+    	width: 155px;
     }
     .sidebar-inner{
     	width: 81px;
@@ -3245,6 +3362,16 @@ ______________________*/
 	.logged-in #sidebar{
 		width: 81px;
 	}
+	.info-sec{
+		padding-top: 10px;
+	}
+	.pay-method{
+		padding-bottom: 23px;
+	}
+	.navbar-header .logo a{
+		min-height: 57px;
+		padding: 15px 20px;
+	}
 }
 @media (min-width: 768px) {
 	nav{
@@ -3252,16 +3379,49 @@ ______________________*/
 	}
 }
 @media (max-width: 767px) {
+	h1,
+	.section1 h3,
+	.lecture-wrap h4,
+	.first-quiz,
+	.btn-right,
+	.section2,
+	.add-section-btn,
+	.company-contact,
+	.opt-btns,
+	.form-title,
+	.ins-level,
+	.nav-custom,
+	.popup-share-left{
+		text-align: center;
+	}
+	.search-bar{
+		margin-bottom: 20px;
+	}
+	.logged-in header{
+		min-height: 60px;
+	}
+	.navbar-nav{
+		float: none;
+		text-align: center;
+	}
+	.navbar-nav > li{
+		margin: 0 18px 10px;
+		display: inline-block;
+		float: none;
+	}
+	.navbar-nav > li:first-child{
+		margin: 0 18px;
+	}
 	.navbar{
 		padding-top: 3px;
 	}
-	.navbar-nav{
+	/*.navbar-nav{
 		margin: 7.5px 0;
 		float: none;
 	}
 	.navbar-nav > li{
 		margin-left: 30px;
-	}
+	}*/
 	.nav-btn a{
 		border: 1px solid #d1d1d1;
 		padding: 12px 10px !important;
@@ -3273,7 +3433,7 @@ ______________________*/
 	.search-bar{
 		text-align: right;
 	}
-		.search-bar input{
+		/*.search-bar input{
 			display: none;
 		}
 		.search-bar button{
@@ -3281,10 +3441,7 @@ ______________________*/
 			padding: 10px 16px 12px;
 			font-size: 17px;
 			position: inherit;
-		}
-	.popup-share-left{
-		text-align:center;
-	}
+		}*/
 	.tell-friends{
 		padding:0;
 		background:none;
@@ -3305,13 +3462,36 @@ ______________________*/
 	.notification-details{
 		padding:0 15px;
 	}
+	.inline-field{
+    	margin-bottom: 20px;
+    }
+    .inline-field input,
+    .inline-field input:first-child{
+    	width: 100%;
+    	display: block;
+    	margin-bottom: 10px;
+    }
+    .btn-group,
+    .price-field .field-length,
+    .price-field .opt-btns{
+    	display: block;
+    }
+    .price-field label{
+		display: block;
+		margin-bottom: 10px;
+    }
+    .field-length input{
+    	width: 100%;
+    }
 
 	/*____ 	Course Tabs  ____*/
 	.nav-custom li {
+		display: inline-block;
+		float: none;
 		margin: 0;
 	}
 		.nav-custom li a {
-			font-size: 10px;
+			font-size: 11px;
 			padding: 15px 0;
 		}
 	.discover-courses {
@@ -3323,6 +3503,10 @@ ______________________*/
 	}
 	.course-content {
 		margin-left: 110px;
+	}
+	.back-link{
+		text-align: center;
+		margin-bottom: 20px;
 	}
 
 	/*____ 	Course Hover  ____*/
@@ -3431,6 +3615,106 @@ ______________________*/
 	}
 	.user-tabs > ul .fa{
 		display: none;
+	}
+	.price-field .btn-group,
+	.price-field .field-length{
+		display: block;
+		margin: 0 0 15px;
+	}
+	.price-field .btn-group .btn{
+		width: 50%;
+		float: none;
+	}
+	.price-field .btn-group .free{
+		margin-right: -2px;
+	}
+	.pager > li > a{
+		font-size: 14px;
+		padding: 10px 19px;
+	}
+	.image-field,
+	.video-fields input{
+		display: block;
+		width: 100%;
+		margin: 0 0 15px;
+	}
+	.section1,
+	.section2{
+		margin-bottom: 20px;
+	}
+	.lecture-wrap h4{
+		padding: 0 10px;
+	}
+	.add-btn{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.content-selection .icons{
+		padding: 0 0 10px;
+		text-align: center;
+	}
+	.icons li{
+		width: 100px;
+		display: inline-block;
+		float: none;
+	}
+	.content-selection li a{
+		padding: 10px 15px;
+	}
+	.content-selection p{
+		margin-bottom: 5px;
+	}
+	.content-selection span{
+		display: inline-block;
+	}
+	.section-name{
+		margin-top: 5px;
+	}
+	.company-contact p{
+		display: inline-block;
+		margin: 0 15px;
+		float: none;
+	}
+	.info-sec p{
+		text-align: justify;
+	}
+	.border-bg{
+		display: none;
+	}
+	.reg-steps .step{
+		margin: 0 30px;
+	}
+	.reg-steps{
+		padding: 20px 10px 0;
+	}
+	.primary-contact label{
+		margin-bottom: 5px;
+	}
+	.pay-method{
+		padding: 15px;
+	}
+	.method-title,
+	.pay-method > div{
+		margin: 0 0 10px;
+		float: none;
+	}
+	.footer-nav{
+		text-align: center;
+	}
+		.footer-nav li{
+			display: inline-block;
+			margin: 0 6px 12px;
+			float: none;
+		}
+	.sign-links{
+		text-align: center;
+		padding-top: 10px;
+	}
+	.copyright{
+		padding-top: 0;
+	}
+	.navbar-header .logo a{
+		padding: 10px 15px;
 	}
 }
 @media (max-width: 480px) {

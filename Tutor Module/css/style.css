@@ -1437,6 +1437,7 @@ ______________________*/
 			padding: 18px 30px 17px;
 		}
 			.became-tutor i{
+				color: #32b1d2;
 				margin-left: 42px;
 				display: inline-block;
 			}
@@ -4016,8 +4017,8 @@ ______________________*/
 	padding: 20px 40px 0 0;
 	
 }
-.kristen a{
-	color: #8db95a;
+.kristen strong i{
+	vertical-align: middle;
 }
 .kristen .fa{
 	font-size: 18px;
@@ -4685,6 +4686,21 @@ ______________________*/
 	}
 }
 @media (max-width: 767px) {
+	.logged-in header{
+		min-height: 60px;
+	}
+	.navbar-nav{
+		float: none;
+		text-align: center;
+	}
+	.navbar-nav > li{
+		margin: 0 18px 10px;
+		display: inline-block;
+		float: none;
+	}
+	.navbar-nav > li:first-child{
+		margin: 0 18px;
+	}
 	h1{
 		font-size: 22px;
 	}

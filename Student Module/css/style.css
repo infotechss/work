@@ -1269,32 +1269,8 @@ ______________________*/
 	.side-nav i{
 		font-size: 20px;
 	}
-	.side-nav .active a{
-		background: #303842 url(../images/caret-icon.png) no-repeat right center;
-	}
-	.side-nav .active a span,
-	.side-nav .acitve a i,
-	.setting-link .active a{
-		color: #32b1d2;
-	}
 		.setting-link i{
 			font-size: 20px;
-		}
-	.side-nav .acitve a .fa-question{
-		border-color: #32b1d2;;
-	}
-	.side-nav .active a .nav-links{
-		color: #fff;
-		font-weight: 700;
-	}
-		.side-nav span{
-			font-size: 20px;
-			vertical-align: middle;
-		}
-		.side-nav .nav-links{
-			display: inline-block;
-			font-size: 12px;
-			margin-left: 20px;
 		}
 		.side-nav .fa-question{
 			color: #9ca1a6;
@@ -1302,6 +1278,15 @@ ______________________*/
 			border-radius: 100px;
 			font-size: 14px;
 			padding: 1px 3px 0;
+		}
+		.side-nav span{
+			font-size: 20px;
+			vertical-align: 2px;
+		}
+		.side-nav .nav-links{
+			display: inline-block;
+			font-size: 12px;
+			margin-left: 20px;
 		}
 .setting-link a{
 	width: 50%;
@@ -1312,6 +1297,18 @@ ______________________*/
 	text-align: center;
 	float: left;
 }
+	.side-nav .active a{
+		background: #303842 url(../images/caret-icon.png) no-repeat right center;
+	}
+	.side-nav .active a span{
+		color: #32b1d2;
+		font-weight: 700;
+	}
+	.side-nav .active i{
+		color: #32b1d2;
+		border-color: #32b1d2;
+	}
+
 .setting-link .active{
 	background: #303842;
 }
@@ -1382,6 +1379,7 @@ ______________________*/
 			padding: 18px 30px 17px;
 		}
 			.became-tutor i{
+				color: #32b1d2;
 				margin-left: 42px;
 				display: inline-block;
 			}
@@ -1530,11 +1528,7 @@ ______________________*/
 	.write-review a{
 		font-size: 12px;
 	}
-	.write-review a:hover{
-		color: #32b1d2;
-	}
 	.write-review i{
-		color: #32b1d2;
 		margin-right: 8px;
 	}
 .left-sec section{
@@ -1592,7 +1586,7 @@ ______________________*/
 			color: #8db85c;
 		}
 		.lec-title{
-			width: 424px;
+			width: 423px;
 			padding: 19px 19px 12px;
 			float: left;
 		}
@@ -1672,7 +1666,7 @@ ______________________*/
 		font-size: 21px;
 		position: absolute;
 		top: 100%;
-		margin-top: -4px;
+		margin-top: -5px;
 		left: 50%;
 		margin-left: -6px;
 	}
@@ -2026,9 +2020,11 @@ ______________________*/
 	.exit-btn{
 		font-size: 26px;
 		color: #5e6978;
+		margin: 0;
 		position: absolute;
 		right: 32px;
-		top: 5px;
+		top: 10px;
+		z-index: 1;
 	}
 .three-steps{
 	background: #fff;
@@ -2112,13 +2108,12 @@ ______________________*/
 		left: 0;
 		right: 0;
 		top: 100%;
-		margin-top: -36px;
 	}
 	.course:hover .course-hov{
 		display: block;
 	}
 	.course .hov-outer{
-		padding: 20px 15px 0;
+		padding: 20px 0 0;
 	}
 	.course .hov-inner{
 		width: auto;
@@ -2127,7 +2122,7 @@ ______________________*/
 		.course .hov-inner > i{
 			margin-right: 0;
 			right: inherit;
-			left: 20%;
+			left: 10%;
 			bottom: 100%;
 			margin-bottom: -12px;
 		}
@@ -2162,6 +2157,18 @@ ______________________*/
 	top: 0;
 	bottom: 0;
 	left: 0;
+}
+.course-cover a{
+	position: relative;
+	display: block;
+	height: 100%;
+}
+.course-cover a i{
+	color: #fff;
+	position: absolute;
+	font-size: 18px;
+	right: -1px;
+	top: 16px;
 }
 	.course-cover img{
 		max-width: 160px;
@@ -2475,7 +2482,6 @@ ______________________*/
 }
 	.avg-rating{
 		background: url(../images/star-bg.png) no-repeat left center;
-		background-size: 100% 100%;
 		min-height: 121px;
 		padding: 20px 0 0 182px;
 	}
@@ -2697,11 +2703,10 @@ ______________________*/
 		position:relative;
 	}
 		.video-btns a{
-			display:inline-block;
 			width:70px;
 			height:32px;
 			position:absolute;
-			left:165px;
+			left:174px;
 		}
 			.btn-prev-v{
 				background:url(../images/btn-prev.png) no-repeat;
@@ -2711,10 +2716,9 @@ ______________________*/
 				background:url(../images/btn-next.png) no-repeat;
 				bottom:-20px;
 			}
-		.study-top{
-			padding:20px 0;
-		}
 			.study-top-1{
+				border-right: 1px solid #686d75;
+				padding: 20px 0;
 				float:left;
 				color:#fff;
 			}
@@ -2748,6 +2752,7 @@ ______________________*/
 					background:#8dbc56;
 					width:32px;
 					height:32px;
+					margin-right: -16px;
 					line-height:32px;
 					text-align:center;
 					-webkit-border-radius:50%;
@@ -2757,6 +2762,7 @@ ______________________*/
 					border-radius:50%;
 				}
 			.study-top-2{
+				padding: 35px 0 20px;
 				float:right;
 				text-align:right;
 			}
@@ -2769,9 +2775,6 @@ ______________________*/
 				}
 				.study-top-2 li a{
 					display:inline-block;
-				}
-				.study-top-2{
-					padding:15px 0 0;
 				}
 		.study-video{
 			
@@ -2946,7 +2949,6 @@ ______________________*/
 				.btn-next-main a{
 					font-size:20px;
 					font-weight:300;
-					text-transform:uppercase;
 				}
 			.main-pagination ul{
 				margin:0;
@@ -3106,7 +3108,11 @@ ______________________*/
 					border-bottom:1px solid #e1e4e9;
 				}
 				.leave-comment textarea{
+					background: #fff url(../images/txt-btns.png) no-repeat 20px 20px;
+					height: 205px;
+					padding: 62px 22px 20px;
 					margin-bottom:20px;
+					resize: none;
 				}
 /* listing-end */
 
@@ -3470,16 +3476,31 @@ ______________________*/
 	}
 }
 @media (max-width: 767px) {
+	.logged-in header{
+		min-height: 60px;
+	}
+	.navbar-nav{
+		float: none;
+		text-align: center;
+	}
+	.navbar-nav > li{
+		margin: 0 18px 10px;
+		display: inline-block;
+		float: none;
+	}
+	.navbar-nav > li:first-child{
+		margin: 0 18px;
+	}
 	.navbar{
 		padding-top: 3px;
 	}
-	.navbar-nav{
+	/*.navbar-nav{
 		margin: 7.5px 0;
 		float: none;
 	}
 	.navbar-nav > li{
 		margin-left: 30px;
-	}
+	}*/
 	.nav-btn a{
 		border: 1px solid #d1d1d1;
 		padding: 12px 10px !important;
@@ -3488,10 +3509,14 @@ ______________________*/
 		.nav-btn i{
 			color: #32b1d2;
 		}
+	.title{
+		text-align: center;
+	}
 	.search-bar{
 		text-align: right;
+		margin-bottom: 20px;
 	}
-		.search-bar input{
+		/*.search-bar input{
 			display: none;
 		}
 		.search-bar button{
@@ -3499,7 +3524,7 @@ ______________________*/
 			padding: 10px 16px 12px;
 			font-size: 17px;
 			position: inherit;
-		}
+		}*/
 	.popup-share-left{
 		text-align:center;
 	}
@@ -3652,6 +3677,21 @@ ______________________*/
 	}
 	.page-lines textarea{
 		width: auto;
+	}
+	.footer-nav{
+		text-align: center;
+	}
+		.footer-nav li{
+			display: inline-block;
+			margin: 0 6px 12px;
+			float: none;
+		}
+	.sign-links{
+		text-align: center;
+		padding-top: 10px;
+	}
+	.copyright{
+		padding-top: 0;
 	}
 }
 @media (max-width: 480px) {

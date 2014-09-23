@@ -17,6 +17,11 @@ j$(document).ready(function(){
 		return false;
 	})
 
+	j$(".navbar-toggle").click(function(){
+		j$("nav").slideToggle();
+	return false;
+	})
+
 	// j$(".logged-in").removeClass("logged-in");
 	
 	var j$scrollbar = j$("#scrollbar1");

@@ -11,6 +11,146 @@ body, input, select, textarea{
 	line-height:1.2;
 }
 
+/*general styles for all CSS Checkboxes*/
+label {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+	  position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:13px;
+	height:13px; 
+	display:inline-block;
+	line-height:13px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -13px;
+}
+
+.css-label{
+	background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+
+/*specific classes related to Checkbox skins*/
+
+.lite-green-check{background-image:url(http://csscheckbox.com/checkboxes/lite-green-check.png);}
+.lite-blue-check{background-image:url(http://csscheckbox.com/checkboxes/lite-blue-check.png);}
+.lite-gray-check{background-image:url(http://csscheckbox.com/checkboxes/lite-gray-check.png);}
+.lite-cyan-check{background-image:url(../images/checkbox2.png);}
+.lite-orange-check{background-image:url(http://csscheckbox.com/checkboxes/lite-orange-check.png);}
+.lite-red-check{background-image:url(http://csscheckbox.com/checkboxes/lite-red-check.png);}
+
+.lite-x-cyan{background-image:url(http://csscheckbox.com/checkboxes/lite-x-cyan.png);}
+.lite-x-gray{background-image:url(http://csscheckbox.com/checkboxes/lite-x-gray.png);}
+.lite-x-blue{background-image:url(http://csscheckbox.com/checkboxes/lite-x-blue.png);}
+.lite-x-orange{background-image:url(http://csscheckbox.com/checkboxes/lite-x-orange.png);}
+.lite-x-red{background-image:url(http://csscheckbox.com/checkboxes/lite-x-red.png);}
+.lite-x-green{background-image:url(http://csscheckbox.com/checkboxes/lite-x-green.png);}
+
+
+.depressed-lite-small{background-image:url(http://csscheckbox.com/checkboxes/depressed-lite-small.png);}
+.elegant{background-image:url(http://csscheckbox.com/checkboxes/elegant.png);}
+.depressed{background-image:url(http://csscheckbox.com/checkboxes/depressed.png);}
+.chrome-style{background-image:url(http://csscheckbox.com/checkboxes/chrome-style.png);}
+.web-two-style{background-image:url(http://csscheckbox.com/checkboxes/web-two-style.png);}
+.vlad{background-image:url(http://csscheckbox.com/checkboxes/vlad.png);}
+.klaus{background-image:url(http://csscheckbox.com/checkboxes/klaus.png);}
+
+input[type=checkbox].css-checkbox.med + label.css-label.med {
+	padding-left:22px;
+    height:17px; 
+	display:inline-block;
+	line-height:17px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.med:checked + label.css-label.med {
+
+    background-position: 0 -17px;
+}
+input[type=checkbox].css-checkbox.sme + label.css-label.sme {
+	padding-left:22px;
+    height:16px; 
+	display:inline-block;
+	line-height:16px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.sme:checked + label.css-label.sme{
+
+    background-position: 0 -16px;
+}
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+	padding-left:22px;
+    height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
+	background-position: 0 -13px;
+}
+
+/*general styles for all CSS Radio*/
+input[type=radio].css-checkbox {
+	position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:13px;
+	height:13px; 
+	display:inline-block;
+	line-height:13px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -13px;
+}
+label.css-label {
+	background:url(../images/radio.png) no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 /*font-family: 'Roboto Condensed', sans-serif;*/
 
 /* Headings
@@ -371,6 +511,9 @@ ______________________*/
 	margin-top: -6px !important;
 	padding: 0 10px 0 !important;
 }
+.radio-fields input{
+	margin-left: 10px;
+}
 .video-fields input{
 	max-width: 824px;
 	display: inline-block;
@@ -529,10 +672,6 @@ button .badge{
 	margin: 6px 0;
 	color:#fff;
 }
-.section1,
-.section2{
-	margin-bottom:80px;
-}
 .section2 h3,
 .section1 h3{
 	font-weight: normal;
@@ -553,9 +692,13 @@ button .badge{
 	padding:10px 20px;
 	font-size:20px;
 }
-.section1-data{
-	padding-left:34px;
+.section-data{
+	margin-bottom: 10px;
+	padding: 0 0 80px 34px;
 	border-left:1px solid #d7d8d9;
+}
+.section2 .section-data{
+	margin-bottom: 20px;
 }
 .lecture-wrap{
 	border:1px solid #d4d3d3;
@@ -899,10 +1042,24 @@ span .fa-dollar{
 	.course-img{
 		position: relative;
 	}
-		.course-img:hover .course-hov{
-			display: block;
-		}
-		.course-img a{
+	.wishlist{
+		display: none;
+		background: #fff;
+		color: #6a7179;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		padding: 4px 10px 4px 6px;
+	}
+	.wishlist i{
+		margin-right: 5px;
+		color: #32b1d2;
+	}
+	.wishlist:hover{
+		color: #32b1d2;
+	}
+		.course-img:hover .course-hov,
+		.course-img:hover .wishlist{
 			display: block;
 		}
 		.course-img img{
@@ -915,18 +1072,6 @@ span .fa-dollar{
 			font-size: 20px;
 			margin: 18px 0 4px;
 		}
-	.wishlist{
-		background: #fff;
-		color: #6a7179;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		padding: 4px 10px 4px 6px;
-	}
-	.wishlist i{
-		margin-right: 5px;
-		color: #32b1d2;
-	}
 .course-hov{
 	display: none;
 	position: absolute;
@@ -992,6 +1137,9 @@ span .fa-dollar{
 				}
 				.white-btns a:last-child{
 					margin-right: 0;
+				}
+				.white-btns a:hover{
+					color: #32b1d2;
 				}
 	.hov-top{
 		border-bottom: 1px solid #535a63;
@@ -1171,7 +1319,7 @@ span .fa-dollar{
 	display: inline-block;
 	width: 372px;
 }
-.receive-field [type="checkbox"]{
+.receive-field .css-label{
 	margin-right: 20px;
 }
 .receive-email{
@@ -3638,9 +3786,9 @@ span .fa-dollar{
 		width: 100%;
 		margin: 0 0 15px;
 	}
-	.section1,
+	.section-data,
 	.section2{
-		margin-bottom: 20px;
+		padding-bottom: 20px;
 	}
 	.lecture-wrap h4{
 		padding: 0 10px;

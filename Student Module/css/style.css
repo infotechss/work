@@ -803,6 +803,23 @@ ______________________*/
 	.course-img{
 		position: relative;
 	}
+	.wishlist{
+		display: none;
+		background: #fff;
+		color: #6a7179;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		padding: 4px 10px 4px 6px;
+		z-index: 1;
+	}
+	.wishlist i{
+		margin-right: 5px;
+		color: #32b1d2;
+	}
+	.wishlist:hover{
+		color: #32b1d2;
+	}
 		.course-img:hover .course-hov{
 			display: block;
 		}
@@ -819,18 +836,6 @@ ______________________*/
 			font-size: 20px;
 			margin: 18px 0 4px;
 		}
-	.wishlist{
-		background: #fff;
-		color: #6a7179;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		padding: 4px 10px 4px 6px;
-	}
-	.wishlist i{
-		margin-right: 5px;
-		color: #32b1d2;
-	}
 .course-hov{
 	display: none;
 	position: absolute;
@@ -2109,7 +2114,8 @@ ______________________*/
 		right: 0;
 		top: 100%;
 	}
-	.course:hover .course-hov{
+	.course:hover .course-hov,
+	.course:hover .wishlist{
 		display: block;
 	}
 	.course .hov-outer{
@@ -2158,12 +2164,12 @@ ______________________*/
 	bottom: 0;
 	left: 0;
 }
-.course-cover a{
+.cover-link{
 	position: relative;
 	display: block;
 	height: 100%;
 }
-.course-cover a i{
+.cover-link i{
 	color: #fff;
 	position: absolute;
 	font-size: 18px;
@@ -3692,6 +3698,9 @@ ______________________*/
 	}
 	.copyright{
 		padding-top: 0;
+	}
+	.navbar-header .logo a{
+		padding: 10px 15px;
 	}
 }
 @media (max-width: 480px) {

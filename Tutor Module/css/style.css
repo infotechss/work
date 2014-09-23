@@ -5084,6 +5084,9 @@ ______________________*/
 	.tutor-main .main-top{
 		text-align: left;
 	}
+	.navbar-header .logo a{
+		padding: 10px 15px;
+	}
 
 }
 @media (max-width: 480px) {

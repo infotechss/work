@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700,900,400);
+0@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700,900,400);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(../css/font-awesome.min.css);
 
@@ -9,6 +9,146 @@ body, input, select, textarea{
 	font-size:12px;
 	color:#6a7179;
 	line-height:1.2;
+}
+
+
+/*general styles for all CSS Checkboxes*/
+label {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+	position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:33px;
+	height:13px; 
+	display:inline-block;
+	line-height:13px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -13px;
+}
+
+.css-label{
+	background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+
+/*specific classes related to Checkbox skins*/
+
+.lite-green-check{background-image:url(http://csscheckbox.com/checkboxes/lite-green-check.png);}
+.lite-blue-check{background-image:url(http://csscheckbox.com/checkboxes/lite-blue-check.png);}
+.lite-gray-check{background-image:url(http://csscheckbox.com/checkboxes/lite-gray-check.png);}
+.lite-cyan-check{background-image:url(../images/checkbox2.png);}
+.lite-orange-check{background-image:url(http://csscheckbox.com/checkboxes/lite-orange-check.png);}
+.lite-red-check{background-image:url(http://csscheckbox.com/checkboxes/lite-red-check.png);}
+
+.lite-x-cyan{background-image:url(http://csscheckbox.com/checkboxes/lite-x-cyan.png);}
+.lite-x-gray{background-image:url(http://csscheckbox.com/checkboxes/lite-x-gray.png);}
+.lite-x-blue{background-image:url(http://csscheckbox.com/checkboxes/lite-x-blue.png);}
+.lite-x-orange{background-image:url(http://csscheckbox.com/checkboxes/lite-x-orange.png);}
+.lite-x-red{background-image:url(http://csscheckbox.com/checkboxes/lite-x-red.png);}
+.lite-x-green{background-image:url(http://csscheckbox.com/checkboxes/lite-x-green.png);}
+
+
+.depressed-lite-small{background-image:url(http://csscheckbox.com/checkboxes/depressed-lite-small.png);}
+.elegant{background-image:url(http://csscheckbox.com/checkboxes/elegant.png);}
+.depressed{background-image:url(http://csscheckbox.com/checkboxes/depressed.png);}
+.chrome-style{background-image:url(http://csscheckbox.com/checkboxes/chrome-style.png);}
+.web-two-style{background-image:url(http://csscheckbox.com/checkboxes/web-two-style.png);}
+.vlad{background-image:url(http://csscheckbox.com/checkboxes/vlad.png);}
+.klaus{background-image:url(http://csscheckbox.com/checkboxes/klaus.png);}
+
+input[type=checkbox].css-checkbox.med + label.css-label.med {
+	padding-left:22px;
+    height:17px; 
+	display:inline-block;
+	line-height:17px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.med:checked + label.css-label.med {
+
+    background-position: 0 -17px;
+}
+input[type=checkbox].css-checkbox.sme + label.css-label.sme {
+	padding-left:22px;
+    height:16px; 
+	display:inline-block;
+	line-height:16px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.sme:checked + label.css-label.sme{
+
+    background-position: 0 -16px;
+}
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+	padding-left:22px;
+    height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
+	background-position: 0 -13px;
+}
+
+/*general styles for all CSS Radio*/
+input[type=radio].css-radio {
+	position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+input[type=radio].css-radio + label.radio-label {
+	height:13px; 
+	display:inline-block;
+	line-height:10px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input[type=radio].css-radio:checked + label.radio-label {
+	background-position: 0 -13px;
+}
+label.radio-label {
+	background:url(../images/radio.png) no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*font-family: 'Roboto Condensed', sans-serif;*/
@@ -1101,7 +1241,7 @@ ______________________*/
 }
 .receive-field .form-control{
 	display: inline-block;
-	width: 372px;
+	width: 370px;
 }
 .receive-field [type="checkbox"]{
 	margin-right: 20px;
@@ -3431,6 +3571,7 @@ ______________________*/
 		text-transform: uppercase;
 		margin-bottom: 17px;
 		color: #3d444e;
+		font-weight: 700;
 	}
 	.tutor-categories label{
 		display: block;
@@ -3504,7 +3645,7 @@ ______________________*/
 		}
 			
 			.teaching-exp .select-exp{
-				margin-right: 73px;
+				margin-right: 58px;
 			}
 				.teaching-exp .select-exp span{
 					margin-right: 48px;
@@ -3530,6 +3671,11 @@ ______________________*/
 	}
 		.offer-demo label{
 			vertical-align: middle;
+			margin-right: 30px;
+			padding-left: 28px;
+		}
+		.offer-demo label:first-child{
+			padding-left: 0;
 		}
 		.offer-demo input{
 			margin: 0 15px 0 24px;
@@ -3704,12 +3850,13 @@ ______________________*/
 		color: #65c6df;
 		margin-right: 22px;
 		border: 2px solid #65c6df;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		-ms-border-radius: 100%;
-		-o-border-radius: 100%;
-		border-radius: 100%;
-		padding: 20px 22px 18px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		-o-border-radius: 100px;
+		border-radius: 100px;
+		padding: 20px 20px 18px;
+		vertical-align: middle;
 	}
 	.about-tutor .col-md-4{
 		border-right: 1px solid #e2e4e6;
@@ -4377,7 +4524,7 @@ ______________________*/
 
 @media (max-width: 1200px){
 	.receive-field .form-control{
-    	width: 297px;
+    	width: 296px;
     }
     .nav-custom li{
     	margin-left: 32px;
@@ -4453,7 +4600,7 @@ ______________________*/
     	margin-right: 28px;
     }
     .receive-field .form-control{
-    	width: 184px;
+    	width: 182px;
     }
     .nav-custom li{
     	margin: 0 18px 0 0;
@@ -4644,7 +4791,7 @@ ______________________*/
 		margin-left: 5px;
 	}
 	.teaching-exp button{
-		padding: 6px 9px;
+		padding: 6px 5px;
 	}
 	.teaching-exp .select-exp span{
 		margin-right: 8px;
@@ -5086,6 +5233,18 @@ ______________________*/
 	}
 	.navbar-header .logo a{
 		padding: 10px 15px;
+	}
+	.tutor-categories > div{
+		display: inline-block;
+	}
+	.txt-border a{
+		margin-left: 5px;
+	}
+	.txt-border a i{
+		margin: 0;
+	}
+	.txt-border span{
+		margin-left: 3px;
 	}
 
 }

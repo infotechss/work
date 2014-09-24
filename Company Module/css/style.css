@@ -125,23 +125,22 @@ input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
 }
 
 /*general styles for all CSS Radio*/
-input[type=radio].css-checkbox {
+input[type=radio].css-radio {
 	position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
-input[type=radio].css-checkbox + label.css-label {
-	padding-left:13px;
+input[type=radio].css-radio + label.radio-label {
 	height:13px; 
 	display:inline-block;
-	line-height:13px;
+	line-height:10px;
 	background-repeat:no-repeat;
 	background-position: 0 0;
 	vertical-align:middle;
 	cursor:pointer;
 }
-input[type=radio].css-checkbox:checked + label.css-label {
+input[type=radio].css-radio:checked + label.radio-label {
 	background-position: 0 -13px;
 }
-label.css-label {
+label.radio-label {
 	background:url(../images/radio.png) no-repeat;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -508,8 +507,8 @@ ______________________*/
 	padding: 23px 0 0;
 }
 .radio-fields label{
-	margin-top: -6px !important;
-	padding: 0 10px 0 !important;
+	margin: -6px 28px 0 0 !important;
+	padding: 0 0 0 28px !important;
 }
 .radio-fields input{
 	margin-left: 10px;
@@ -1445,12 +1444,10 @@ span .fa-dollar{
 /*  Payment Methods
 -------------------------------------- */
 .pay-method{
-	border: 1px solid #d1d1d1;
+	position: relative;
 	border-radius: 2px;
+	border: 1px solid #d1d1d1;
 	padding: 23px 30px 5px;
-}
-.pay-method.active{
-	border: 2px solid #32b1d2;
 }
 	.pay-method > div{
 		float: left;
@@ -1465,20 +1462,19 @@ span .fa-dollar{
 			}
 	.method-radio{
 		position: absolute;
-		left: 15px;
-		right: 15px;
+		left: 0;
+		right: 0;
 		top: 0;
 		bottom: 0;
 		text-align: right;
 		padding: 36px 15px 0;
+		border: 2px solid transparent;
 	}
-	.method-radio i{
-		display: inline-block;
-		color: #d2d2d2;
-		font-size: 26px;
+	.pay-method:hover .method-radio{
+		border: 2px solid #32b1d2;
 	}
-	.pay-method.active .method-radio i{
-		color: #32b1d2;
+	.pay-method:hover{
+		border: 1px solid transparent;
 	}
 .pay-confirm h2{
 	margin-bottom: 6px;

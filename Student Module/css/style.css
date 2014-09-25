@@ -2844,11 +2844,17 @@ ______________________*/
 		float:left;
 		width:100%;
 	}
+	.study-left.newClass{
+		width: 65%;
+	}
 	.study-right-wrap{
 		width:35%;
 		margin-top: 10px;
 		position: absolute;
 		left: 100%;
+	}
+	.study-right-wrap.newClass{
+		left: 64%;
 	}
 	.study-left{
 		margin-bottom: -82px;
@@ -2990,6 +2996,7 @@ ______________________*/
 			.study-nav li{
 				float:left;
 				width:25%;
+				margin-right: 0;
 				text-align:center;
 			}
 			.study-nav a{
@@ -3003,6 +3010,9 @@ ______________________*/
 			.study-nav li.active a{
 				color:#32b1d2;
 				border-bottom:2px solid #32b1d2;
+			}
+			.study-nav i{
+				font-size: 24px;
 			}
 		.study-section-wrap{
 			padding:0 20px 0 0;

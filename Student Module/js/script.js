@@ -22,15 +22,35 @@ j$(document).ready(function(){
 	return false;
 	})
 
-	j$(".logged-in").removeClass("logged-in");
+	j$( ".sb-collapse a" ).click(function() {
+		j$( "#study-panel, #study-video" ).toggleClass( "newClass", 500 );
+	});
+
+	j$("[data-toggle=tooltip]").tooltip();
+
+	// j$(".sb-collapse a").click(function(){
+	// 	if ( j$(this).hasClass("active") ) {
+	// 		j$(this).removeClass('active');
+	// 		j$(".study-right-wrap").animate({ left:'100%' });
+	// 		j$(".study-left-wrap").animate({ width:'100%' });
+	// 	};
+	// 	else{
+	// 		j$(this).addClass("active");
+	// 		j$(".study-right-wrap").animate({ left:'64%' });
+	// 		j$(".study-left-wrap").animate({ width:'65%' });
+	// 	}
+	// 	return false;
+	// })
+
+	// j$(".logged-in").removeClass("logged-in");
 	
 	var j$scrollbar = j$("#scrollbar1");
 	j$scrollbar.tinyscrollbar();
 
-	j$(".sb-collapse a").click(function(){
-		j$(".study-right-wrap").animate({ left:'64%' });
-		j$(".study-left-wrap").animate({ width:'65%' });
-	return false;
-	})
+	// j$(".sb-collapse a").click(function(){
+	// 	j$(".study-right-wrap").animate({ left:'64%' });
+	// 	j$(".study-left-wrap").animate({ width:'65%' });
+	// return false;
+	// })
 
 })

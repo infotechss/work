@@ -125,22 +125,29 @@ input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
 }
 
 /*general styles for all CSS Radio*/
-input[type="radio"] {
-    display:none;
+input[type=radio].css-radio {
+	position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
-
-input[type="radio"] + label span {
-    display:inline-block;
-    width:13px;
-    height:13px;
-    margin:-1px 16px 0 0;
-    vertical-align:-2px;
-    background:url(../images/radio.png) 0 top no-repeat;
-    cursor:pointer;
+input[type=radio].css-radio + label.radio-label {
+	height:13px; 
+	display:inline-block;
+	line-height:10px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
 }
-
-input[type="radio"]:checked + label span {
-    background:url(../images/radio.png) -13px top no-repeat;
+input[type=radio].css-radio:checked + label.radio-label {
+	background-position: 0 -13px;
+}
+label.radio-label {
+	background:url(../images/radio.png) no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*font-family: 'Roboto Condensed', sans-serif;*/
@@ -501,6 +508,7 @@ ______________________*/
 }
 .radio-fields label{
 	margin: -6px 28px 0 0 !important;
+	padding: 0 0 0 28px !important;
 }
 .radio-fields input{
 	margin-left: 10px;
